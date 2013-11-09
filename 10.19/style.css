@@ -1,0 +1,4069 @@
+
+* {
+	word-wrap:break-word;
+}
+html {
+	background:#417FA8 url("http://wssgcg1213.qiniudn.com/sky.jpg") top center fixed no-repeat;
+}
+body {
+	text-align:center;
+}
+body,div,input,textarea,select,button {
+	color:#000;
+	font:9pt/1.6em Avenir,Lucida Grande,Calibri,divebuchet MS,Helvetica,Arial,Hiragino Sans GB,WenQuanYi Micro Hei,STHeiti,Microsoft Jhenghei,Nanum Gothic,sans-serif;
+}
+input,select,button {
+	vertical-align:middle;
+}
+body,ul,li,dl,dd,p,h1,h2,h3,h4,h5,h6,form,fieldset {
+	margin:0;
+	padding:0;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:1em;
+}
+ul li {
+	list-style:none;
+}
+a {
+	text-decoration:none;
+	color:#40596a;
+}
+a:hover {
+	text-decoration:underline;
+}
+.lightlink,.lightlink a {
+	color:#3b6e8e;
+}
+a img {
+	border:none;
+}
+em,cite,strong,th {
+	text-align:left;
+	font-style:normal;
+}
+.emfont {
+	color:#2d3444;
+}
+table {
+	empty-cells:show;
+	border-collapse:collapse;
+}
+th {
+	font-weight:400;
+}
+.txt,.txtarea {
+	padding:2px;
+	*padding:0 2px;
+	height:16px;
+	*height:20px;
+	border:1px solid;
+	border-color:#c0c0c0 #c0c0c0 #c0c0c0 #c0c0c0;
+	background:#FFF;
+}
+.txtarea {
+	height:auto;
+}
+.checkbox,.radio {
+	margin:0;
+	width:15px;
+}
+.pipe {
+	margin:0 5px;
+}
+.lighttxt,.lighttxt a,.pipe {
+	color:#585858;
+}
+.smalltext {
+	font-size:8pt;
+	font-family:Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,WenQuanYi Micro Hei,STHeiti,Microsoft Jhenghei,Nanum Gothic,sans-serif;
+}
+.noborder,.noborder div {
+	border:none !important;
+}
+.nobg {
+	background:none !important;
+}
+.right {
+	float:right;
+}
+.left {
+	float:left;
+}
+.onerror,.onright {
+	clear:both;
+	padding:2px 2px 2px 22px;
+	background:url(../../images/macidea/check_error.gif) no-repeat 2px 2px;
+}
+.onright {
+	background:url(../../images/macidea/check_right.gif) no-repeat 2px 2px;
+}
+.notice {
+	clear:both;
+	margin:5px 0;
+	padding:3px 5px 3px 20px;
+	background:url(../../images/macidea/notice.gif) no-repeat 2px 6px;
+}
+.nodata {
+	margin:99px auto;
+	text-align:center;
+	color:#585858;
+	font-size:16px;
+	font-weight:700;
+}
+#ajaxwaitid {
+	display:none;
+	position:absolute;
+	z-index:100;
+	top:0;
+	right:0;
+	width:100px;
+	height:1.6em;
+	background:#D00;
+	line-height:1.6em;
+	color:#FFF;
+	overflow:hidden;
+}
+#checksecanswer img,#checksecanswer3 img,#checkseccodeverify img,#checkseccodeverify3 img,.warning img {
+	vertical-align:middle;
+}
+.autosave {
+	behavior:url(#default#userdata);
+}
+.s_clear:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+.s_clear {
+	zoom:1;
+}
+hr {
+	clear:both;
+	margin:1em 0;
+	border:0 solid #c0c0c0;
+	background:transparent;
+}
+.solidline {
+	border-top:1px solid #f6f6f6;
+	border-bottom-width:1px;
+}
+.dashline {
+	height:0px;
+	border-bottom-width:1px;
+	border-style:solid;
+}
+.shadowline {
+	*margin:2px 0;
+	border-width:1px 0;
+	border-top-color:#C8DCEC;
+	border-bottom-color:#FFF;
+}
+.side .shadowline {
+	margin:5px 0;
+	*margin:2px 0;
+}
+.cornerlayger {
+	padding:6px 8px;
+	border:1px solid #09C;
+	background:#EBF2F8;
+	line-height:1.6em;
+}
+.minicorner {
+	margin-top:-1px;
+	height:6px;
+	background:url(../../images/macidea/attachinfobg.gif) no-repeat 50% 0;
+}
+.wrap {
+	text-align:left;
+	margin:0 auto;
+}
+#wrap {
+	padding-bottom:10px;
+	min-height:450px;
+	border:1 solid;
+	background-color:#f6f6f6;
+	clear:both;
+}
+* html #wrap {
+	height:450px;
+}
+.wrap,#nav {
+	width:980px;
+}
+#header {
+	margin-bottom:8px;
+	min-width:980px;
+	width:100%;
+	border-bottom:0px solid;
+}
+#header .wrap {
+	position:relative;
+	padding:24px 0 22px;
+}
+#header h2 {
+	float:left;
+}
+#umenu {
+	position:absolute;
+	right:0;
+	top:0;
+	line-height:20px;
+}
+#umenu a {
+	margin:0 6px;
+}
+#umenu cite {
+	font-weight:700;
+}
+#umenu cite span a {
+	margin:0;
+	font-weight:400;
+}
+#pm_ntc.new,#task_ntc.new {
+	padding-left:22px;
+	background:url(../../images/macidea/notice_newpm.gif) no-repeat 0 50%;
+}
+#task_ntc.new {
+	padding-left:15px;
+	background-image:url(../../images/macidea/icon_task.gif);
+}
+#pm_ntc_menu {
+	margin-left:-27px;
+	padding-top:10px;
+	width:250px;
+	background:transparent url(../../images/macidea/pm_ntc.gif) no-repeat 0 0;
+	text-align:left;
+	opacity:0.98;
+}
+#pm_ntc_view {
+	padding-bottom:10px;
+	background:transparent url(../../images/macidea/pm_ntc.gif) no-repeat -250px 100%;
+}
+#pm_ntc_menu ul {
+	padding:0 10px;
+	border:solid #91C8E2;
+	border-width:0 2px;
+	background:#FEFEFE;
+}
+#pm_ntc_menu li {
+	height:29px;
+	border-bottom:1px solid #F4F4F4;
+	line-height:29px;
+}
+#pm_ntc_menu a {
+	display:block;
+	width:100%;
+	color:#585858;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-webkit-text-overflow:ellipsis;
+	-moz-text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	white-space:nowrap;
+}
+#pm_ntc_menu a em {
+	padding-right:8px;
+	color:#333;
+}
+#pm_ntc_menu a:hover {
+	text-decoration:none;
+	color:#3b6e8e;
+}
+#uchome_ntc {
+	padding:1px 10px 3px 15px;
+	*padding:2px 10px 2px 15px;
+	background:url(../../images/macidea/notify_bg_m.gif) no-repeat 0 50%;
+	color:#FFF !important;
+}
+#uchome_ntc a {
+	margin:0;
+}
+#umenu,#umenu a,#umenu .pipe {
+	color:#f8fafd;
+}
+#footer {
+	padding:1em 0;
+}
+#rightinfo {
+	float:left;
+}
+#footlink {
+	float:right;
+	text-align:right;
+}
+#footer,#footer a {
+	color:#417fa8;
+}
+.content {
+	padding:20px 25px;
+}
+.content h1 {
+	margin-bottom:10px;
+	font-size:16px;
+	font-weight:400;
+}
+#menu {
+	position:absolute;
+	right:0;
+	bottom:0;
+	_bottom:-2px;
+	height:26px;
+}
+#menu li {
+	display:inline;
+	float:left;
+	margin-left:5px;
+	background:#DDDDDD url("../../images/macidea/forumcontrolbg.gif") repeat-x;
+}
+#menu a {
+	float:left;
+	padding:0 14px;
+	height:25px;
+	border:solid #A3A3A3;
+	border-width:1px 1px 0;
+	background:transparent none;
+	line-height:25px;
+	color:#2d3444;
+	text-decoration:none;
+	overflow:hidden;
+}
+#menu a.dropmenu {
+	padding-right:20px;
+	background-image:url(../../images/macidea/arrow_down.gif);
+	background-repeat:no-repeat;
+	background-position:95% 50%;
+}
+#menu a:hover {
+	border-color:;
+	background-color:#1f5092;
+	color:#f1f1f1;
+}
+#menu li.current a {
+	height:26px;
+	border-color:;
+	background-color:#1f5092;
+	color:#f1f1f1;
+}
+#nav {
+	margin:-8px auto 0;
+	background:url(../../images/macidea/icon_nav.gif) no-repeat 0 50%;
+	text-align:left;
+	text-indent:25px;
+	line-height:3em;
+}
+#nav,#nav a {
+	color:#f1f1f1;
+}
+.mainbox table {
+	width:100%;
+}
+.foruminfo {
+	margin-top:5px;
+	line-height:30px;
+}
+#ann dt {
+	float:left;
+	width:5em;
+	background:url(../../images/macidea/ann_icon.gif) no-repeat 0 50%;
+	text-indent:2em;
+	font-weight:700;
+}
+#ann dd {
+	margin-left:30px;
+}
+#ann li {
+	padding-left:10px;
+	white-space:nowrap;
+}
+#ann em {
+	margin-left:5px;
+	color:#2d3444;
+	font-size:0.83em;
+}
+#annbody {
+	height:30px;
+	overflow:hidden;
+	padding-right:16px;
+}
+.forumcount {
+	margin-left:16px;
+}
+.blocktitle {
+	margin-bottom:0.5em;
+	font-size:16px;
+	font-weight:700;
+}
+.channelinfo {
+	clear:both;
+	margin:5px 0;
+	color:#2d3444;
+}
+.channelinfo img {
+	vertical-align:middle;
+}
+.channelinfo .onerror {
+	* background-position:2px 0;
+}
+.pages_btns {
+	padding:5px 0 1em;
+	line-height:30px;
+}
+.postbtn,.replybtn,#modopt,#modopttmp {
+	float:left;
+	margin-right:10px;
+	color:#3b6e8e;
+	cursor:pointer;
+}
+#modopt,#modopttmp,.threadlist tfoot a {
+	background-color:#FFF;
+	border:1px solid;
+	border-color:#c0c0c0 #c0c0c0 #c0c0c0 #c0c0c0;
+	padding:0 16px 0 6px;
+	line-height:20px;
+}
+.threadlist tfoot a {
+	margin-right:5px;
+	padding:3px 16px 3px 3px;
+}
+#modopt:hover,#modopttmp:hover,.threadlist tfoot a:hover {
+	text-decoration:none;
+	color:#3b6e8e;
+}
+.postbtn,.replybtn {
+	width:67px;
+	height:30px;
+	background:url(../../images/macidea/newtopic.png) no-repeat 0 0;
+	font-size:14px;
+	font-weight:700;
+	line-height:28px;
+	*line-height:32px;
+	text-align:center;
+	overflow:hidden;
+}
+.replybtn {
+	background-image:url(../../images/macidea/reply.gif);
+}
+.postbtn a,.replybtn a {
+	display:block;
+	padding-left:5px;
+	color:#FFF;
+	letter-spacing:5px;
+}
+.postbtn a:hover,.replybtn a:hover {
+	text-decoration:none;
+}
+.pages,.pageback {
+	float:right;
+	padding:2px 0;
+}
+.pages a,.pages strong,.pageback a {
+	float:left;
+	padding:0 6px;
+	margin-right:2px;
+	height:20px;
+	border:1px solid;
+	line-height:20px;
+	overflow:hidden;
+}
+.pages a,.pageback a {
+	border-color:#c0c0c0;
+	background-color:#f6f6f6;
+	color:#3b6e8e;
+}
+.pages a:hover,.pageback a:hover {
+	text-decoration:none;
+}
+.pages strong {
+	border-color:#3b6e8e;
+	background-color:#3b6e8e;
+	color:#FFF;
+	font-weight:700;
+}
+.pages a.prev,.pages a.next {
+	background-repeat:no-repeat;
+}
+.pages a.prev {
+	background-image:url(../../images/macidea/arrow_left.gif);
+	background-position:30% 50%;
+	padding:0;
+	width:22px;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+.pages a.next {
+	padding-right:16px;
+	background-image:url(../../images/macidea/arrow_right.gif);
+	background-position:90% 50%;
+}
+.pageback a {
+	padding-left:16px;
+	background:#f6f6f6 url(../../images/macidea/arrow_left.gif) no-repeat 0 50%;
+}
+.pages a:hover,.pageback a,.pages a.next {
+	border-color:#3b6e8e;
+}
+.taglist {
+	margin:20px 10px;
+}
+.taglist a {
+	height:30px;
+	line-height:30px;
+	margin-right:20px;
+	word-break:keep-all;
+}
+#infoside .taglist a {
+	margin-right:10px;
+	height:22px;
+	line-height:22px;
+}
+a.tagl1,a.tagl2 {
+	font-size:12px;
+	color:#666 !important;
+}
+a.tagl2 {
+	color:#999 !important;
+}
+a.tagl3 {
+	font-size:14px;
+	color:#090 !important;
+}
+a.tagl4 {
+	font-size:16px;
+	color:#09C !important;
+}
+a.tagl5 {
+	font-size:18px;
+	color:#F60 !important;
+}
+.formtable {
+	width:100%;
+}
+.formtable th {
+	padding:5px 2px;
+	width:100px;
+}
+.formtable th a {
+	font-weight:400;
+	color:#3b6e8e;
+	text-decoration:underline;
+}
+.formtable div {
+	padding:5px 2px;
+}
+.formtable .sep_space th {
+	height:40px;
+}
+.formtable .txt {
+	width:270px;
+}
+.formtable .txtarea {
+	float:left;
+	margin:-1px 8px 0 0;
+	width:270px;
+	height:60px;
+	border-top-color:#c0c0c0;
+}
+.float_typeid {
+	float:left;
+	margin-right:6px;
+}
+.float_typeid select {
+	float:left;
+	height:20px;
+}
+.float_typeid a {
+	display:block;
+	overflow:hidden;
+	text-indent:4px;
+	padding-right:17px;
+	width:77px;
+	height:20px;
+	*padding-top:2px;
+	*height:18px;
+	text-decoration:none !important;
+	color:#000 !important;
+	border:1px solid;
+	border-color:#c0c0c0 #c0c0c0 #c0c0c0 #c0c0c0;
+	background:#FFF url(../../images/macidea/newarow.gif) no-repeat 100% 0;
+}
+.float_typeid a:hover {
+	text-decoration:none;
+	border:1px solid #3b6e8e;
+	background-position:100% -20px;
+}
+.float_postinfo .float_typeid a {
+	line-height:20px;
+	*line-height:18px;
+}
+.float_typeid ul {
+	margin:-22px 0 0;
+	border:1px solid #3b6e8e;
+	background:#FFF url(../../images/macidea/newarow.gif) no-repeat 100% -20px;
+}
+* html .float_typeid ul {
+	margin-top:-23px;
+}
+.float_typeid ul li {
+	margin:0 4px;
+	color:#000;
+	cursor:pointer;
+}
+.float_typeid ul li:hover {
+	color:#3b6e8e;
+}
+.newselect .current {
+	font-weight:700;
+}
+.float_typeid select {
+	width:94px;
+}
+.short_select a {
+	width:43px;
+}
+.short_select select {
+	width:60px;
+}
+.commonlist li {
+	margin:4px 0;
+}
+.inlinelist li {
+	float:left;
+	width:33%;
+}
+.inlinelist li.wide {
+	width:49.5%;
+}
+.titlelist li {
+	margin:3px 0;
+	height:1.6em;
+	background:url(../../images/macidea/dot.gif) no-repeat 8px 9px;
+	overflow:hidden;
+}
+.titlelist li a {
+	padding-left:1.5em;
+}
+.titlelist li cite {
+	padding:0 0 0 5px;
+}
+.titlelist li cite a {
+	padding:0 0 0 5px;
+	color:#2d3444;
+}
+.datalist {
+	zoom:1;
+}
+.datalist table {
+	margin-bottom:30px;
+	width:100%;
+	border:1px solid #c0c0c0;
+}
+.datalist th,.datalist div {
+	padding:4px 5px;
+	border:1px solid #c0c0c0;
+	font-weight:400;
+}
+.datalist th img {
+	vertical-align:top;
+}
+.datalist table .stat_subject {
+	border-right:none;
+}
+.datalist table .stat_num {
+	padding-right:15px;
+	text-align:right;
+	border-left:none;
+}
+.datalist .datatable {
+	margin-bottom:10px;
+}
+.datalist .datatable,.datalist .datatable th,.datalist .datatable div {
+	border-width:1px 0;
+}
+.filterform {
+	margin-bottom:15px;
+	padding:10px;
+	border:1px solid #EDEDED;
+	background-color:#dee4ea;
+}
+.filterform table,.filterform table th,.filterform table div {
+	margin-bottom:0;
+	border:none;
+}
+.colplural,.colplural th,.colplural div {
+	background-color:#E8E8E8;
+}
+.avt_list li {
+	float:left;
+	margin-right:9px;
+	width:64px;
+	height:54px;
+	text-align:center;
+}
+.side .avt_list li {
+	margin:0;
+	width:33.3%
+}
+.postmessage .avt_list li {
+	height:70px;
+}
+.avt_uname li {
+	height:80px;
+}
+.avt_list img {
+	display:block;
+	margin:0 auto;
+}
+.avt_list p {
+	width:96%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+.avt_list .cornerlayger p {
+	white-space:normal;
+	text-align:left;
+}
+.avt_list .minicorner {
+	background:url(../../images/macidea/attachinfobg.gif) no-repeat -30px 0;
+}
+.avt_title {
+	margin:8px;
+}
+.rateopt {
+	overflow:auto;
+	margin-bottom:10px;
+	height:100px;
+}
+.ratelist {
+	margin-bottom:3px;
+}
+.ratelist .dropdownbtn {
+	margin-right:5px;
+}
+.ratelist .txt {
+	width:45px;
+}
+.ratelist label {
+	float:left;
+	white-space:nowrap;
+	overflow:hidden;
+	width:120px;
+}
+.list {
+	border-top:3px solid #c0c0c0;
+}
+.content .list h3 {
+	padding-left:6px;
+	color:#2d3444;
+	line-height:35px;
+}
+.list div,.list th {
+	height:150px;
+	padding:6px 0;
+	border-top:1px solid #c0c0c0;
+	color:#2d3444;
+}
+.list th {
+	background:url(../../images/macidea/forum.gif) 5px 10px no-repeat;
+	padding-left:45px !important;
+}
+.narrowlist th {
+	vertical-align:top;
+}
+.list th.new {
+	background-image:url(../../images/macidea/forum_new.gif);
+}
+.list th h2 em {
+	font-weight:400;
+}
+.list th h2 em strong {
+	color:#2d3444
+}
+#forumheader {
+	line-height:24px;
+}
+#forumheader h1 {
+	float:left;
+	margin-right:1em;
+	font-weight:700;
+}
+#forumheader .forumstats {
+	float:left;
+	margin-right:1em;
+}
+#forumheader .forumstats strong {
+	color:#2d3444;
+}
+.forumaction {
+	float:left;
+}
+.forumaction a {
+	padding-left:20px;
+	padding-right:1em;
+	background:url(../../images/macidea/icon_fav.png) no-repeat 0 50%;
+}
+.forumaction .feed {
+	background-image:url(../../images/macidea/icon-feed.gif);
+}
+.forumaction .digest {
+	background-image:url(../../images/macidea/digest_3.gif);
+}
+.forumaction .recyclebin {
+	background-image:url(../../images/macidea/recyclebin.gif);
+}
+#forumheader #modedby {
+	clear:both;
+}
+#forumheader #modedby a {
+	color:#3b6e8e;
+}
+.threadtype {
+	padding:8px 6px;
+	border-top:3px solid #c0c0c0;
+	line-height:2em;
+}
+.threadtype a,.threadtype strong {
+	margin-right:6px;
+	padding-right:6px;
+	border-right:1px solid #c0c0c0;
+	white-space:nowrap;
+}
+.threadtype .popupmenu_popup a {
+	margin-right:0;
+	padding-right:0;
+	border:none;
+}
+.threadtype strong {
+	font-weight:700;
+	color:#3b6e8e;
+	white-space:nowrap;
+}
+.folder {
+	width:25px;
+	text-align:center;
+}
+div.icon {
+	width:28px;
+	text-align:center;
+}
+.icon .solved {
+	filter:alpha(opacity=30);
+	opacity:0.3;
+}
+.subject label {
+	float:right;
+}
+.threadlist th a:hover,.subject a:hover {
+	color:#3b6e8e;
+}
+.datatable .subject {
+	padding:7px 5px;
+}
+.threadpages {
+	white-space:nowrap;
+}
+.threadpages a {
+	color:#000;
+}
+.forum,.author,.lastpost {
+	width:100px;
+}
+.lastpost,.lastpost cite,.lastpost em {
+	text-align:right;
+}
+.author cite,.lastpost cite {
+	display:block;
+	margin-bottom:-5px;
+	width:95px;
+	height:1.6em;
+	overflow:hidden;
+}
+thead .lastpost cite {
+	margin-bottom:0;
+}
+.author em,.lastpost em,.lastpost em a {
+	font-size:9px;
+	font-family:Arial,sans-serif;
+	color:#585858;
+}
+.lastpost cite,.lastpost em {
+	display:block;
+	margin-right:5px;
+}
+.nums {
+	width:80px;
+	color:#585858;
+	text-align:right;
+}
+thead .nums {
+	color:#000;
+}
+.nums strong {
+	padding-right:2px;
+	color:#3b6e8e;
+	font-weight:400;
+}
+.nums em {
+	padding-left:2px;
+	color:#000;
+}
+.forumnums {
+	width:90px;
+	padding-right:10px !important;
+	color:#585858;
+	text-align:center;
+}
+.forumnums em {
+	color:#3b6e8e;
+}
+.forumlast {
+	width:225px;
+	text-align:left;
+}
+.num {
+	width:120px;
+	text-align:center;
+	color:red;
+}
+.threadlist .colplural th,.threadlist .colplural div {
+	padding:3px 0 !important;
+	background:#dee4ea;
+}
+.threadlist th em {
+	margin-right:4px;
+}
+.threadlist th em,.threadlist th em a {
+	color:#3b6e8e;
+}
+.threadlist th .new {
+	color:#3b6e8e;
+	font-size:9px;
+	text-transform:uppercase;
+	white-space:nowrap;
+}
+.threadlist th .attach {
+	vertical-align:middle;
+}
+* html .threadlist th .attach {
+	vertical-align:baseline;
+}
+.threadlist th a {
+	text-decoration:none;
+}
+.rule {
+	margin:0 8px;
+}
+#modarea,#subforum {
+	margin:1em 0;
+}
+#modarea .list h3 {
+	margin-bottom:6px;
+	border-bottom:1px solid #c0c0c0;
+	font-weight:400;
+}
+#modarea .list h3 .current {
+	font-weight:700;
+	color:#3b6e8e;
+}
+.dropmenu {
+	padding-right:15px;
+	background:url(../../images/macidea/arrow_down.gif) 100% 50% no-repeat;
+	cursor:pointer;
+}
+.popupmenu_popup {
+	overflow:hidden;
+	padding:10px;
+	text-align:left;
+	line-height:1.4em;
+	border:1px solid #c0c0c0;
+	background:#F6F6F6;
+}
+.headermenu_popup {
+	width:100px;
+}
+.headermenu_popup li {
+	width:100px;
+	line-height:24px;
+	border-bottom:1px solid #c0c0c0;
+}
+.headermenu_popup .active {
+	font-weight:700;
+}
+.filter_popup {
+	width:5em;
+}
+.filter_popup li {
+	width:60px;
+}
+.postmenu {
+	width:100px;
+}
+#visitedforums_menu {
+	width:140px;
+}
+.postmenu li,#visitedforums_menu li {
+	float:left;
+	background:url(../../images/macidea/folder_s.gif) no-repeat 3px 50%;
+}
+.postmenu li.poll {
+	background-image:url(../../images/macidea/pollsmall.gif);
+}
+.postmenu li.trade {
+	background-image:url(../../images/macidea/tradesmall.gif);
+}
+.postmenu li.reward {
+	background-image:url(../../images/macidea/rewardsmall.gif);
+}
+.postmenu li.activity {
+	background-image:url(../../images/macidea/activitysmall.gif);
+}
+.postmenu li.debate {
+	background-image:url(../../images/macidea/debatesmall.gif);
+}
+.postmenu li.video {
+	background-image:url(../../images/macidea/videosmall.gif);
+}
+.postmenu a,#visitedforums_menu a {
+	display:block;
+	width:75px;
+	border-bottom:1px solid #c0c0c0;
+	padding:5px 0 5px 25px;
+}
+.postmenu a:hover,#visitedforums_menu a:hover {
+	text-decoration:none;
+	color:#3b6e8e;
+	border-bottom-color:#EDEDED;
+}
+#visitedforums_menu li {
+	background:none;
+}
+#visitedforums_menu li a {
+	padding:5px 0;
+	width:140px;
+}
+#fjump_menu {
+	padding:10px 30px 10px 20px;
+}
+#fjump_menu dl {
+	padding:5px 0;
+}
+#fjump_menu dt a {
+	font-weight:700;
+	color:#2d3444;
+}
+#fjump_menu dd {
+	padding-left:1em;
+}
+#fjump_menu li.sub {
+	padding-left:1em;
+}
+#fjump_menu li.current a {
+	font-weight:700;
+}
+#fjump_menu li a {
+	font-weight:400;
+	color:#3b6e8e;
+}
+.showselect_menu {
+	margin-bottom:0.8em;
+	padding:5px;
+	text-align:left;
+	border:1px solid #c0c0c0;
+	background:#F6F6F6;
+}
+.tagthread {
+	width:360px;
+}
+.tagthread .close {
+	float:right;
+}
+.tagthread h4 {
+	line-height:26px;
+	border-bottom:1px solid #c0c0c0;
+}
+.tagthread ul {
+	padding:5px;
+}
+.tagthread li {
+	line-height:1.8em;
+}
+.tagthread li.more {
+	padding-right:10px;
+	text-align:right;
+	background:url(../../images/macidea/arrow_right.gif) no-repeat 100% 50%;
+}
+.headactions .popupmenu_popup a,.headactions .popupmenu_popup strong {
+	color:#2d3444;
+	background:none;
+	white-space:nowrap;
+}
+.headactions .popupmenu_popup {
+	overflow:visible;
+}
+.moderators {
+	width:115px;
+}
+#threadtypesmenu_menu ul li {
+	height:1.4em;
+	_line-height:1.4em;
+	width:100px;
+}
+.hasdropdownbtn {
+	}.hasdropdownbtn input {
+	float:left;
+	width:129px;
+}
+.hasdropdownbtn .spmediuminput {
+	width:115px;
+}
+.dropdownbtn {
+	float:left;
+	overflow:hidden;
+	text-indent:-9999px;
+	width:20px;
+	height:20px;
+	border-width:1px 1px 1px 0;
+	border-style:solid;
+	border-color:#c0c0c0 #c0c0c0 #c0c0c0 #c0c0c0;
+	background:#FFF url(../../images/macidea/newarow.gif) no-repeat 0 0;
+}
+.dropdownbtn:hover {
+	background-position:0 -20px;
+}
+#style_switch {
+	position:absolute;
+	right:0px;
+	bottom:-25px;
+}
+#style_switch li {
+	float:left;
+	padding-left:5px;
+}
+#style_switch a {
+	float:left;
+	width:8px;
+	height:8px;
+	border:1px solid #DDD;
+	background:#FFF;
+	line-height:100px;
+	overflow:hidden;
+}
+#style_switch a:hover,#style_switch .current a {
+	border-color:#FFF;
+}
+#style_switch .current a {
+	margin-top:-1px;
+	border-width:2px;
+}
+#ad_headerbanner {
+	float:right;
+	margin:5px 0 10px;
+}
+.forum_notice {
+	margin:0 auto 5px;
+	padding:10px 0;
+	width:980px;
+	background:#f6f6f6;
+}
+.forum_notice table {
+	width:100%;
+}
+.forum_notice div {
+	padding:3px 20px;
+	text-align:left;
+}
+.forum_noticelink1,.forum_noticelink2 {
+	margin:10px 0;
+	padding-left:20px;
+	background:url(../../images/macidea/icon_ad.gif) no-repeat 0 50%;
+}
+.ad_pip {
+	clear:right;
+	float:right;
+	padding:10px;
+	background:#f6f6f6;
+	color:#585858;
+	line-height:130%;
+}
+.ad_pip li {
+	margin-bottom:1em;
+}
+.ad_pip a {
+	color:#3b6e8e;
+}
+.ad_topicrelated {
+	clear:both;
+	float:right;
+	display:inline;
+	margin:0 10px 10px;
+	padding:10px 10px 10px 30px;
+	border:1px solid #78A73D;
+	background:#CAEEC0;
+}
+.ad_column {
+	text-align:center;
+}
+.forum_bottomshadow {
+	text-align:center;
+	clear:both;
+	margin:5px;
+}
+.headactions {
+	float:right;
+	line-height:1em;
+	padding:12px 0 0 0;
+}
+.headactions img {
+	vertical-align:middle;
+	cursor:pointer;
+	padding:0 5px;
+}
+.headactions a {
+	margin-left:4px;
+}
+.mainbox .headactions {
+	color:#585858;
+}
+.mainbox .headactions strong {
+	font-weight:700;
+}
+.msgfix {
+	overflow:hidden;
+}
+.showmessage {
+	position:relative;
+	margin:5px;
+	padding:80px 260px;
+	height:290px;
+	background:#dee4ea;
+}
+.showmessage h1 {
+	height:30px;
+	line-height:30px;
+	font-size:18px;
+	color:#3b6e8e;
+}
+.showmessage p {
+	line-height:24px;
+	font-size:14px;
+}
+.showmessage a {
+	color:#3b6e8e;
+	text-decoration:underline;
+	font-weight:700;
+}
+#sidebar_img {
+	float:right;
+	display:inline;
+	margin:0 6px;
+	padding:6px 25px 6px 6px;
+	background:url(../../images/macidea/sidebar_toggle.gif) no-repeat 100% 5px;
+	color:#3b6e8e;
+	position:relative;
+	z-index:998;
+}
+.collapsed_no:hover {
+	background-position:100% -35px !important;
+	text-decoration:none;
+}
+.collapsed_yes {
+	background-position:100% -75px !important;
+}
+.collapsed_yes:hover {
+	background-position:100% -115px !important;
+	text-decoration:none;
+}
+.side {
+	width:170px;
+}
+.sideinner .txt {
+	margin:6px 0;
+}
+.with_side {
+	background:#FFF url("../../images/macidea/sidebg.gif") repeat-y 100% 0;
+}
+.with_side .main {
+	float:left;
+	overflow:hidden;
+	margin-left:-180px;
+	width:100%;
+}
+.with_side .content {
+	margin-left:180px;
+	width:auto;
+}
+.with_side .side {
+	float:right;
+	padding-bottom:20px;
+	width:180px;
+}
+.with_side .side h2 {
+	margin:20px 25px 10px;
+	color:#585858;
+	font-size:14px;
+}
+.with_side .side a {
+	color:#3b6e8e;
+	text-decoration:underline;
+}
+.sideinner {
+	padding:0 25px;
+}
+.sideinner .tabs {
+	margin:5px 0;
+}
+.sideinner .tabs li {
+	line-height:2em;
+}
+.numbg {
+	float:right;
+	text-align:center;
+	width:35px;
+	height:2em;
+	background:url(../../images/macidea/numbg.gif) no-repeat 0 50%;
+	color:#FFF;
+	font-weight:700;
+}
+.special {
+	background:none;
+}
+.special .main {
+	float:right;
+}
+.special .side {
+	float:left;
+}
+.sidebox {
+	margin:5px 10px 10px;
+}
+.sidebox h4 {
+	margin-bottom:4px;
+	color:#3b6e8e;
+}
+.textinfolist li {
+	margin-bottom:2px;
+}
+.side .textinfolist li a {
+	text-decoration:none;
+	color:#000;
+}
+.side .textinfolist li a:hover {
+	text-decoration:underline;
+}
+.forumlinks,.forumimglink,.forumtxtlink {
+	padding:6px;
+	border-top:1px solid #c0c0c0;
+}
+.forumlinks ul li {
+	float:left;
+	width:49%;
+	height:50px;
+	line-height:1.4em;
+}
+.forumimglink a {
+	margin-right:8px;
+}
+.forumimglink img {
+	margin:2px 0;
+}
+.forumlogo {
+	float:left;
+	padding-top:2px;
+	width:100px;
+}
+.forumcontent {
+	padding-right:18px;
+	height:50px;
+}
+.forumcontent p {
+	overflow:hidden;
+	height:17px;
+	color:#2d3444;
+}
+.forumtxtlink li {
+	float:left;
+	margin-right:5px;
+	width:8em;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+#headsearch em {
+	font-size:20px;
+	margin-right:10px;
+	color:#3b6e8e;
+}
+#qihoosearch input,#gform input#q {
+	margin:6px 0;
+}
+#online h3 {
+	font-weight:400;
+}
+#online h3 a,#online h3 em,#online h3 strong {
+	font-weight:700;
+}
+#onlinelist {
+	}#onlinelist dt,#onlinelist dd {
+	padding:1em;
+	border-top:1px solid #c0c0c0;
+}
+#onlinelist dd ul li {
+	float:left;
+	margin:4px 0;
+	width:20%;
+	height:14px;
+	line-height:14px;
+}
+#onlinelist dt img,#onlinelist dd img {
+	vertical-align:middle;
+}
+.c_header {
+	overflow:hidden;
+	margin-bottom:10px;
+}
+* html .c_header {
+	zoom:1;
+}
+.c_header h2,.c_header h3 {
+	float:left;
+	padding-right:15px;
+	background:#f6f6f6;
+	font-size:14px;
+	cursor:pointer;
+}
+.c_header h3 {
+	background:#f6f6f6 url(../../images/macidea/arrow_down_big.gif) no-repeat 100% 5px;
+	color:#3b6e8e;
+}
+.searchfaq h3 {
+	background:none;
+	cursor:auto;
+}
+.c_header .noarrow {
+	background:none;
+	cursor:auto;
+}
+.c_header h3 a {
+	color:#3b6e8e;
+}
+.c_header h3 span {
+	font-size:12px;
+	font-weight:400;
+	color:#2d3444;
+}
+.c_header h2 em,.c_header h3 em {
+	margin-left:8px;
+	font-size:12px;
+	color:#585858;
+	font-weight:400;
+}
+.c_header_action {
+	float:right;
+}
+.c_header .c_header_ctrlbtn {
+	display:none;
+}
+.c_header .c_header_ext {
+	display:block;
+}
+.closenode {
+	background:url(../../images/macidea/dashline.gif) repeat-x 0 10px;
+}
+.closenode h3 {
+	background-image:url(../../images/macidea/arrow_right_big.gif);
+}
+.closenode .c_header_ctrlbtn {
+	display:block;
+	background-color:#f6f6f6;
+	color:#2d3444;
+	cursor:pointer;
+}
+.closenode .c_header_ext {
+	display:none;
+}
+.itemtitle {
+	clear:both;
+	overflow:hidden;
+	margin-bottom:10px;
+	line-height:23px;
+}
+.itemtitle h1 {
+	float:left;
+	margin:0 20px 0 0;
+}
+.itemtitle ul {
+	float:left;
+}
+.itemtitle li {
+	float:left;
+	margin-right:5px;
+}
+.itemtitle li.pipe {
+	margin-left:0;
+}
+.itemtitle ul a {
+	display:block;
+	overflow:hidden;
+	height:23px;
+	cursor:pointer;
+}
+* html .itemtitle ul a {
+	float:left;
+}
+.itemtitle ul a span {
+	display:block;
+	padding:0 7px;
+	*padding:1px 7px 0;
+	*line-height:22px;
+}
+.itemtitle ul a:hover {
+	background:#F5F5F5 url(../../images/macidea/btn_block.gif) no-repeat 0 -46px;
+	text-decoration:none;
+}
+.itemtitle ul a:hover span {
+	background:url(../../images/macidea/btn_block.gif) no-repeat 100% -69px;
+}
+.itemtitle ul a.dropmenu {
+	padding-right:0;
+	background-position:0 -161px;
+}
+.itemtitle ul a.dropmenu span {
+	padding-right:12px;
+	background:url(../../images/macidea/btn_block.gif) no-repeat 100% -138px;
+}
+.itemtitle ul a.dropmenu:hover {
+	background-position:0 -46px;
+}
+.itemtitle ul a.dropmenu:hover span {
+	background-position:100% -115px;
+}
+.itemtitle ul .current a,.itemtitle ul .current a:hover,.itemtitle ul .current a.dropmenu:hover {
+	background:#3b6e8e url(../../images/macidea/btn_block.gif) no-repeat 0 0;
+}
+.itemtitle ul .current a span,.itemtitle ul .current a:hover span {
+	background:url(../../images/macidea/btn_block.gif) no-repeat 100% -23px;
+	color:#FFF;
+}
+.itemtitle ul .current a.dropmenu span,.itemtitle ul .current a.dropmenu:hover span {
+	background-position:100% -92px;
+}
+.titlemenu_popup {
+	padding:0;
+}
+.titlemenu_popup a {
+	display:block;
+	padding:3px 8px;
+}
+* html .titlemenu_popup a {
+	display:inline-block;
+}
+.titlemenu_popup .current a {
+	background:#F1F5FA;
+}
+.seccode {
+	margin-top:5px;
+}
+.seccodecontent {
+	position:absolute;
+	z-index:11;
+	top:80px;
+	left:50px;
+	width:224px;
+	height:52px;
+	border:1px solid #c0c0c0;
+	background:#F6F6F6;
+}
+* html .seccodecontent {
+	top:81px;
+	height:56px;
+}
+*+html .seccodecontent {
+	top:81px;
+	height:54px;
+}
+.popupcredit {
+	}.pc_l,.pc_c,.pc_inner,.pc_r {
+	width:29px;
+	height:56px;
+	line-height:56px;
+	background:url(../../images/macidea/popupcredit_bg.gif) no-repeat 0 0;
+}
+.pc_c {
+	width:200px;
+	background-position:0 -56px;
+	background-repeat:repeat-x;
+}
+.pc_inner {
+	white-space:nowrap;
+	text-align:center;
+	width:auto;
+	background-position:50% -112px;
+}
+.pc_inner span {
+	margin-right:15px;
+	color:#FFEA97;
+	font-size:14px;
+	font-weight:700;
+}
+* html .pc_inner span {
+	display:inline-block;
+}
+.pc_inner span em {
+	color:#FFF;
+	font-size:18px;
+	font-weight:400;
+}
+.pc_inner span em.desc {
+	color:#930;
+}
+.pc_btn img {
+	opacity:0.5;
+}
+.pc_btn:hover img {
+	opacity:1;
+}
+.pc_r {
+	background-position:-30px 0;
+}
+.optionbar {
+	float:left;
+	overflow:hidden;
+	margin:3px 4px 0 -6px;
+	background:#3b6e8e url(../../images/macidea/header.gif) repeat-x;
+	height:14px;
+}
+.taskbar {
+	position:relative;
+	margin:5px 0;
+	width:200px;
+	height:14px;
+	border:1px solid #5AAF4A;
+	background:#FFF;
+}
+.taskbar_text {
+	position:absolute;
+	top:-3px;
+	right:5px;
+	z-index:7;
+	font-size:10px;
+}
+.taskbar .optionbar {
+	float:none;
+	position:absolute;
+	margin:0;
+	background:#5AAF4A;
+}
+.nojs {
+	position:absolute;
+	left:50%;
+}
+.nojs .float {
+	overflow:hidden;
+	margin-left:-300px;
+}
+.nojs .moreconf {
+	left:-94.5%;
+	width:194.5%;
+}
+#floatwinnojs {
+	position:absolute;
+}
+* html .nojs {
+	left:25%;
+}
+* html .nojs .float {
+	margin-left:0;
+}
+* html .nojs .moreconf {
+	left:0;
+}
+.side_poll li {
+	line-height:1.8em;
+}
+.side_trade li {
+	padding-bottom:5px;
+}
+.side_trade li strong {
+	float:left;
+	width:80px;
+	height:auto;
+	text-align:center;
+}
+.side_type {
+	height:23px;
+	border-bottom:1px solid #A3A3A3;
+	margin:0 4px;
+}
+.side_type h4 {
+	float:left;
+	cursor:pointer;
+	margin:0 0 -1px 4px;
+	height:22px;
+	line-height:22px;
+	padding:0 4px;
+	border:1px solid #A3A3A3;
+	font-weight:300;
+	color:#585858;
+}
+.side_type h4.ontype {
+	margin-bottom:1px;
+	height:23px;
+	border-bottom:1px #dee4ea;
+	background:#dee4ea;
+	font-weight:700;
+	color:#3b6e8e
+}
+.combine h4 {
+	display:none;
+}
+h3.requesttabs {
+	height:22px;
+	line-height:22px;
+	padding:4px 6px;
+	color:#3b6e8e;
+	font-weight:700;
+}
+.requesttabs span {
+	float:right;
+	font-weight:300;
+	color:#585858;
+}
+.with_side .side h3.requesttabs a {
+	margin:0 4px;
+	font-weight:300;
+	color:#585858;
+	text-decoration:none;
+}
+.with_side .side h3.requesttabs a:hover {
+	text-decoration:underline;
+}
+.with_side .side h3.requesttabs a.ontype {
+	font-weight:700;
+	color:#000
+}
+.deloption {
+	float:left;
+	margin:4px;
+	width:12px;
+	height:12px;
+	background:url(../../images/macidea/close.gif) no-repeat 0 0;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+.deloption:hover {
+	background-position:0 -12px;
+}
+.color_menu {
+	overflow:hidden;
+	position:absolute;
+	z-index:9999;
+	left:96px;
+	top:109px;
+	width:63px;
+}
+.color_menu a {
+	display:block;
+	overflow:hidden;
+	margin:0 !important;
+	width:20px !important;
+	height:20px !important;
+}
+.chosemagic {
+	margin-bottom:9px;
+	width:220px;
+}
+.topicadminhigh {
+	height:200px;
+}
+.topicadminhigh .tah_body {
+	margin:5px 0 15px;
+}
+.topicadminhigh .tah_body select {
+	width:217px;
+}
+.topicadminlow {
+	height:50px;
+}
+.topicadminlow table {
+	width:100%;
+}
+.topicadminlow div {
+	padding:0 5px;
+}
+.topicadminlow .txt {
+	width:100px;
+}
+.topicadminlow .wide .txt {
+	width:50px;
+}
+.topicadminlog {
+	}.topicadminlog h4 {
+	font-weight:400;
+}
+.topicadminlog .dropdownbtn {
+	border-left-width:1px;
+}
+.topicadminlog .txtarea {
+	margin:5px 0;
+	width:212px;
+	height:40px;
+}
+.smilieslist {
+	text-align:center;
+	padding:10px;
+	border:1px solid #c0c0c0;
+	background:#F6F6F6;
+}
+.smilieslist div {
+	padding:8px;
+	border:none;
+	cursor:pointer;
+}
+.smilieslist_page {
+	text-align:right;
+}
+.pags_act {
+	float:left;
+}
+.pags_act a {
+	display:inline !important;
+}
+.smilieslist_page a {
+	display:inline;
+	margin:0 4px;
+	color:#3b6e8e;
+	text-decoration:underline;
+}
+.smilieslist_table {
+	position:absolute;
+	left:-100px;
+	top:0;
+	*top:-1px;
+	width:100px !important;
+	height:100px;
+	border:1px solid #c0c0c0;
+	background:#f6f6f6;
+}
+.smilieslist_preview {
+	text-align:center;
+	vertical-align:middle;
+}
+.smiliesgroup {
+	height:33px;
+	*height:34px;
+	overflow:hidden;
+	width:expression(this.parentNode.offsetWidth);
+}
+.smiliesgroup ul,.imguptype {
+	margin:6px 0;
+	padding:0 0 26px 8px;
+	border-bottom:1px solid #c1c5ca;
+}
+.smiliesgroup li,.imguptype li {
+	display:inline;
+}
+.smiliesgroup li a,.imguptype li a {
+	float:left;
+	margin:2px 6px 0 0;
+	padding:2px 10px;
+	height:24px;
+	he\ight:19px;
+	border:1px solid #c1c5ca;
+	color:#3b6e8e;
+}
+.smiliesgroup li a:focus,.imguptype li a:focus {
+	outline:none;
+}
+.smiliesgroup li a.current,.imguptype li a.current {
+	border-bottom-color:#F6F6F6;
+	font-weight:700;
+	color:#000;
+}
+.dashline {
+	height:0px;
+	border-bottom-width:1px;
+	border-style:solid;
+}
+.shadowline {
+	*margin:2px 0;
+	border-width:1px 0;
+	border-top-color:#C8DCEC;
+	border-bottom-color:#FFF;
+}
+#nav {
+	line-height:26px;
+	height:27px;
+	text-shadow:rgba(255,255,255,0.746094) 0 1px 0;
+	color:#141414;
+	text-indent:15px;
+	text-align:left;
+	font-size:12px;
+	border:none;
+	background:-moz-linear-gradient(top,#eee 0%,#ccc 100%);
+	background:-o-linear-gradient(top,#eee 0%,#ccc 100%);
+	background:-webkit-linear-gradient(top,#eee 0%,#ccc 100%);
+	background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#eee 0%),color-stop(1,#ccc 100%));
+	filter:"progid:DXImagetransform.Microsoft.gradient(startColorStr=#eee 0%,EndColorStr=#ccc 100%)";
+	background:linear-gradient(top,#eee 0%,#ccc 100%);
+	-webkit-border-top-left-radius:5px;
+	-moz-border-radius-topleft:5px;
+	border-top-left-radius:5px;
+	width:100%;
+	-webkit-border-top-right-radius:5px;
+	-moz-border-radius-topright:5px;
+	border-top-right-radius:5px;
+	border-bottom:1px solid gray;
+	margin:0
+}
+#nav a {
+	color:#515151;
+	text-decoration:none;
+	font-weight:bold;
+}
+.with_side .main {
+	margin-left:0px;
+	width:800px;
+}
+.with_side .content {
+	margin-left:0px;
+	width:800px;
+}
+.wrap,#nav {
+	min-width:845px;
+	width:980px;
+}
+#wrap {
+	padding-bottom:0;
+	background-color:#f6f6f6;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid rgba(0,0,0,0.45);
+	-moz-box-shadow:0 5px 15px rgba(0,0,0,0.55);
+	-webkit-box-shadow:0 5px 15px rgba(0,0,0,0.55);
+	box-shadow:0 5px 15px rgba(0,0,0,0.55)
+}
+#ann {
+	width:100%-150px;
+}
+#annbody {
+	background-image:url(../../images/macidea/annbg.gif);
+	background-repeat:repeat-x;
+	background-color:#ffffff;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border-radius:3px;
+	border:1px solid #a4a6a5;
+	text-shadow:none;
+	height:21px;
+	padding-bottom:6px;
+	padding-left:10px;
+	margin-top:5px;
+}
+#ann li {
+	padding:0px;
+}
+#searchdiv {
+	cursor:default;
+	top:35px;
+	left:230px;
+	position:absolute;
+	line-height:13px;
+	padding:6px 5px 0px 15px;
+	text-align:center;
+}
+#searchbox {
+	float:right;
+	background:url(../../images/macidea/searchbox.png) no-repeat;
+	height:14px;
+	padding:4px 11px 11px 22px;
+	text-align:left;
+	width:119px;
+}
+#searchbox input {
+	background:white;
+	border:0px;
+	color:black;
+	cursor:text;
+	font:normal normal normal 12px/12px 'Lucida Grande',Verdana,sans-serif;
+	height:14px;
+	outline:none;
+	padding:0px;
+	width:119px;
+}
+#umenu {
+	top:0px;
+	padding:0px 10px;
+	background:url("http://wssgcg1213.qiniudn.com/umenutop.png") no-repeat 100% 0;
+	line-height:30px;
+	font-weight:bold;
+}
+#umenu a.noborder {
+	float:left;
+	margin-left:-10px;
+	padding-left:10px;
+	display:inline;
+	background:url(../../images/macidea/umenutop.png) no-repeat 0 -30px;
+}
+* html #umenu a.noborder {
+	margin-left:0;
+	background-position:0 100%;
+}
+#umenu a {
+	margin:0 2px;
+	text-shadow:#000 0px 0px 3px
+}
+#umenu .pipe {
+	margin:0 2px;
+	color:#f8fafd;
+	text-shadow:#3b6e8e 0px 0px 1px;
+}
+#header {
+	height:110px;
+}
+#style_switch {
+	position:absolute;
+	right:10px;
+	bottom:0px;
+}
+#style_switch li {
+	float:left;
+	padding-left:5px;
+}
+#style_switch a {
+	float:left;
+	width:9px;
+	height:9px;
+	border:1px solid rgba(255,255,255,0);
+	background:none;
+	line-height:100px;
+	overflow:hidden;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	box-shadow:#d4d4d4 0px 0px 3px;
+	-webkit-box-shadow:#d4d4d4 0px 0px 3px;
+	-moz-box-shadow:0px 0px 3px #d4d4d4;
+}
+#style_switch a:hover,#style_switch .current a {
+	border-color:rgba(255,255,255,20);
+	box-shadow:#fff 0px 0px 3px;
+	-webkit-box-shadow:#fff 0px 0px 3px;
+	-moz-box-shadow:0px 0px 3px #fff;
+}
+#style_switch .current a {
+	margin-top:0px;
+	border-width:1px;
+}
+.mod {
+	padding-top:5px;
+}
+.content {
+	padding:15px;
+}
+.content_nopadding {
+	padding:0px 0 0;
+}
+.list {
+	border-top:none;
+}
+.list div,.list th {
+	height:50px;
+	padding:3px 0;
+/*	border-bottom:1px solid #EDEDED;*/
+	color:#2d3444;
+	border-top:none;
+}
+.narrowlist th {
+	vertical-align:top;
+}
+.list th h2 em {
+	font-weight:400;
+}
+.list th h2 em strong {
+	color:#2d3444;
+}
+.list th {
+	background:none;
+	padding-left:15px !important;
+}
+.list th.new {
+	background:none;
+}
+#category_1 th,#subforum th {
+	background:none !important;
+	padding-left:15px  !important;
+}
+.forumlisting th a img,.forumlisting2 th a img {
+	margin-top:0px !important;
+	margin-right:0px !important;
+}
+.forumlisting th.new a img,.forumlisting2 th.new a img {
+	margin-top:0px !important;
+	margin-right:0px !important;
+}
+.forumlisting2 h2 a:hover,.forumlisting h2 a:hover {
+	text-decoration:none;
+}
+#loader {
+	height:100%;
+	width:32px;
+	float:left;
+	padding-right:12px;
+	padding-top:8px;
+	background:url(../../images/macidea/iconbg.gif) 0px 8px no-repeat;
+}
+#forumheader .loading {
+	height:34px;
+	width:32px;
+	float:left;
+	padding-right:12px;
+	padding-top:2px;
+	background:url(../../images/macidea/iconbg.gif) 0px 2px no-repeat;
+}
+.content_nopadding .list h3,.content .list h3 {
+	padding-left:10px;
+	text-transform:uppercase;
+
+	border-bottom:1px solid #A3A3A3;
+	border-top:1px solid #A3A3A3;
+	color:#585858;
+	font-size:12px;
+	font-weight:bold;
+	line-height:23px;
+	text-shadow:white 0px 1px 0px;
+}
+a.forumheading:link {
+	color:#585858;
+}
+a.forumheading:hover {
+	color:#3b6e8e;
+	text-decoration:none;
+}
+a.forumheading:visited:hover {
+	color:#3b6e8e;
+	text-decoration:none;
+}
+a.forumheading:visited {
+	color:#585858;
+}
+.content_nopadding h1 {
+	margin-bottom:10px;
+	font-size:16px;
+	font-weight:400;
+}
+.with_side .content_nopadding {
+	margin-left:180px;
+	width:auto;
+}
+.largeheading {
+	background-color:#e8e8e8;
+}
+#onlinelist dt {
+	padding:5px;
+	text-align:center;
+}
+.folder {
+	padding-left:15px !important;
+}
+.icon {
+	padding-right:7px !important;
+}
+.lastpost {
+	padding-right:15px  !important;
+}
+.subject {
+	padding:7px 5px;
+}
+.forumaction {
+	float:right;
+}
+.forumaction a {
+	padding-left:23px;
+	padding-right:1em;
+	background:url(../../images/macidea/icon_fav.png) no-repeat 0 50%;
+}
+.forumaction .feed {
+	background-image:url(../../images/macidea/icon-feed.gif);
+	padding-left:23px;
+}
+.forumaction .digest {
+	background-image:url(../../images/macidea/digest_3.gif);
+	padding-left:23px;
+}
+.forumaction .recyclebin {
+	background-image:url(/images/macidea/recyclebin.gif);
+	padding-left:23px;
+}
+.postbtn {
+	width:93px;
+	height:24px;
+	background:url(../../images/macidea/newtopic.png) no-repeat 0 0;
+	font-size:0px;
+	font-weight:700;
+	line-height:28px;
+	*line-height:32px;
+	text-align:center;
+	overflow:hidden;
+	color:transparent;
+}
+.replybtn {
+	width:93px;
+	height:24px;
+	background:url(../../images/macidea/newreply.png) no-repeat 0 0;
+	font-size:0px;
+	font-weight:700;
+	line-height:28px;
+	*line-height:32px;
+	text-align:center;
+	overflow:hidden;
+	color:transparent;
+}
+.postbtn,.replybtn {
+	color:transparent;
+	font-size:0px;
+}
+.pages,.pageback {
+	float:right;
+	padding:2px 0;
+	text-shadow:#FFF 0px 1px 0px;
+}
+.pages a,.pages strong,.pageback a {
+	float:left;
+	padding:0 6px;
+	margin-right:2px;
+	height:20px;
+	border:none;
+	line-height:20px;
+	overflow:hidden;
+}
+.pages a,.pageback a {
+	color:#40596a;
+	background:NONE;
+}
+.pages a:hover,.pageback a:hover {
+	text-decoration:none;
+}
+.pages strong {
+	color:#3b6e8e;
+	font-weight:700;
+	background:NONE;
+}
+.pages a.prev,.pages a.next {
+	}.pages a.prev {
+	background-image:url(../../images/macidea/arrow_left.gif);
+	background-position:30% 50%;
+	padding:0;
+	width:22px;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+.pages a.next {
+	padding-right:16px;
+	background-image:url(../../images/macidea/arrow_right.gif);
+	background-position:90% 50%;
+}
+.pageback a {
+	padding-left:16px;
+	background:url(../../images/macidea/arrow_left.gif) no-repeat 0 50%;
+}
+.pages a:hover,.pageback a,.pages a.next {
+	}.datalist th,.datalist div {
+	border:none;
+	font-weight:400;
+}
+.colplural,.colplural th,.colplural div,.threadlist .colplural th,.threadlist .colplural div {
+	background-image:url(../../images/macidea/glossyHeader.png);
+	background-image:-moz-linear-gradient(top,#FFFFFF 0%,#EAE9E9 100%);
+	background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#FFFFFF),color-stop(100%,#EAE9E9));
+	background-repeat:repeat-x;
+	background-color:#eae9e9;
+	border-top-style:solid;
+	border-top-width:1px;
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	border-color:#c0c0c0;
+	text-shadow:#FFF 0px 1px 0px;
+	height:20PX;
+}
+.threadlist .colplural th,.threadlist .colplural div {
+	padding:0 !important;
+}
+.threadlist tfoot a {
+	font-size:10px;
+	padding:1px 16px 1px 6px;
+}
+#modarea {
+	margin:0 15px 20px;
+}
+#subforum {
+	margin:0 15px 20px;
+}
+#modarea {
+	border:1px solid #c0c0c0;
+	background-color:#fff;
+	box-shadow:0px 0px 3px #c0c0c0;
+	-webkit-box-shadow:0px 0px 3px #c0c0c0;
+	-moz-box-shadow:0px 0px 3px #c0c0c0;
+}
+#modarea .list h3 {
+	background-image:NONE;
+	border-top:none;
+	border-bottom:none;
+}
+#modarea .list h3 .current {
+	text-transform:uppercase;
+	color:#585858;
+	font-size:12px;
+	font-weight:bold;
+	height:22px;
+	line-height:23px;
+	text-shadow:white 0px 1px 0px;
+}
+}#modarea_c {
+	padding-bottom:5px !important;
+	padding-top:5px !important;
+}
+.rule {
+	margin:0 0 0 0;
+	-webkit-animation-duration:0.4s;
+	-webkit-animation-name:fadeSimple;
+}
+#subforum {
+	border:1px solid #c0c0c0;
+	border-top:none;
+	background-color:#fff;
+	box-shadow:0px 0px 3px #c0c0c0;
+	-webkit-box-shadow:0px 0px 3px #c0c0c0;
+	-moz-box-shadow:0px 0px 3px #c0c0c0;
+}
+.showmessage {
+	background-image:none;
+	background:none;
+	background-color:none;
+}
+.forumlisting,.forumlisting th,.narrowlist,.narrowlist th {
+	background-color:#FFFFFF !important;
+}
+.forumlisting2,.forumlisting2 th,.narrowlist2,.narrowlist2 th {
+	background-color:#EFF4F9 !important;
+}
+.forumlistingnotice {
+	background-color:#EFF4F9 !important;
+}
+.postcontent {
+	background-color:#FFFFFF !important;
+}
+a {
+	-webkit-transition:all 0.2s linear;
+	-moz-transition:all 0.2s linear;
+}
+a:hover,a:visited:hover {
+	text-shadow:#585858 0px 0px 3px;
+}
+.columntype div {
+	border-left:none;
+}
+#uchome_ntc {
+	background:none;
+	padding:0 0 0 0;
+}
+.headactions {
+	padding:6px 0px 0px 0px;
+	text-transform:uppercase;
+	background-image:none;
+	background:none;
+	color:#585858;
+	font-size:11px;
+	text-shadow:white 0px 1px 0px;
+}
+.headactions img {
+	padding:0px 10px;
+}
+.validateinfo {
+	padding-left:70px;
+}
+.pages_btns {
+	line-height:40px;
+	background-image:url(../../images/macidea/forumcontrolbg.gif);
+	background-image:-moz-linear-gradient(top,#F1F1F1 0%,#DDDDDD 100%);
+	background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#F1F1F1),color-stop(100%,#DDDDDD));
+	background-repeat:repeat-x;
+	background-position:top;
+	background-color:#dddddd;
+	padding:15px;
+}
+#forumheader {
+	line-height:15px;
+	padding-right:15px;
+	padding-left:15px;
+	padding-bottom:20px;
+	padding-top:20px;
+	text-shadow:#d7d7d7 0px 1px 0px;
+}
+.threadtype {
+	padding:0;
+	border:0px;
+	border-style:none;
+	line-height:24px;
+	text-shadow:#FFF 0px 1px 0px;
+}
+.threadtype a,.threadtype strong {
+	border-right:none !important;
+}
+.datalist .datatable {
+	margin-bottom:0;
+}
+.foruminfowrap {
+	padding-top:5px;
+	padding-right:15px;
+	padding-left:15px;
+	padding-bottom:15px;
+	text-shadow:#d7d7d7 0px 1px 0px;
+}
+.commonseparator {
+	background-image:url(../../images/macidea/postseparator.gif);
+	background-repeat:repeat-x;
+	padding:0;
+	height:6px;
+	border:none;
+}
+.commonseparator2 {
+	box-shadow:rgba(0,0,0,1) 0px 0px 20px;
+	-webkit-box-shadow:rgba(0,0,0,1) 0px 0px 20px;
+	-moz-box-shadow:0px 0px 20px #000;
+	height:1px;
+	background-color:#b2b2b2;
+}
+.forumlinks,.forumimglink,.forumtxtlink {
+	padding:6px 15px 6px 15px;
+}
+#footer {
+	text-shadow:#000 0 1px 5px
+}
+.popupmenu_popup {
+	background:rgba(255,255,255,0.9);
+	color:black;
+	text-shadow:#c0c0c0 1px 1px 3px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	box-shadow:rgba(0,0,0,0.2) 0px 0px 5px;
+	-webkit-box-shadow:rgba(0,0,0,0.2) 0px 0px 5px;
+	-moz-box-shadow:0px 0px 5px rgba(0,0,0,0.2);
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.float_typeid ul {
+	position:absolute;
+	top:72px;
+	left:323px;
+}
+}.ad_pip {
+	background:#FFF;
+}
+.lt,#authornewfeed {
+	-moz-border-radius:3px;
+	text-shadow:#48546a 0px 1px 1px;
+	-webkit-border-radius:3px;
+	color:#ffffff !important;
+	padding:2px 6px !important;
+	background:#585858 !important;
+}
+.threadlist th .new {
+	border:1px solid #8f9dac;
+	-moz-border-radius:2px;
+	text-shadow:#8795a3 0px -1px 0px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	color:#ffffff;
+	padding:0px 2px;
+	background:#B7C5D3;
+	background:-moz-linear-gradient(top,#B7C5D3 0%,#909FAE 100%);
+	background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#B7C5D3),color-stop(100%,#909FAE));
+	-webkit-text-size-adjust:none;
+}
+.threadlist th a.new:hover {
+	color:#ffffff;
+}
+.author em,.lastpost em,.lastpost em a {
+	-webkit-text-size-adjust:none;
+}
+.shadowline {
+	border:none;
+	border-color:transparent;
+}
+.side a {
+	text-decoration:none !important;
+}
+.quote {
+	background-color:#EEEEEE !important;
+	color:#333333;
+	font-style:italic;
+	margin:1em 2em 0.5em !important;
+	padding:10px 10px 10px 1em !important;
+	background:url(../../images/macidea/quotebg.gif) repeat scroll 0 0 transparent !important;
+	border-color:#EEEEEE;
+	border-style:solid;
+	border-width:1px 1px 1px 3px;
+}
+.quote blockquote {
+	background:none !important;
+}
+A:link[HREF*="redirect.php"]  IMG {
+	display:none ! important;
+}
+.polloptionbar,.optionbg {
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+}
+.headermenu_popup li {
+	border:none !important;
+	border-color:transparent !important;
+}
+.postmenu a,#visitedforums_menu a {
+	border:none !important;
+	border-color:transparent !important;
+}
+.newrate dt strong {
+	background:none !important;
+	font-family:Futura,Helvetica,Arial;
+	font-size:32px !important;
+}
+.newrate dt strong a,.newrate dt strong a em {
+	text-shadow:rgba(0,0,0,0.15) 0px 0px 5px;
+}
+.postact_right {
+	float:right
+}
+.moreconf button,.moreconf a,button,.postact_right a,.thankbutton {
+	background:#e2e2e2 repeat-x top left;
+	background-image:url(../../images/macidea/buttonnormal.png);
+	background-image:-moz-linear-gradient(top,#F7F7F7 0%,#E2E2E2 100%);
+	background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#F7F7F7),color-stop(100%,#E2E2E2));
+	font-size:12px;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	text-shadow:rgba(255,255,255,0.55) 0px 1px 1px;
+	-webkit-border-radius:10px;
+	color:black  !important;
+	padding:1.5px 9px;
+	border:1px solid #a8a8a8;
+	text-decoration:none !important;
+	-webkit-transition:all .15s ease-out;
+	-moz-transition:all .15s ease-out;
+	margin-right:5px;
+}
+.moreconf button:active,.moreconf a:active,button:active,.postact_right a:active,.thankbutton:active {
+	background:#d2d2d2 repeat-x top left;
+	font-size:12px;
+	background-image:url(../../images/macidea/buttonactive.png);
+	background-image:-moz-linear-gradient(top,#A7A7A7 0%,#C4C4C4 33%,#D2D2D2 100%);
+	background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#A7A7A7),color-stop(33%,#C4C4C4),color-stop(100%,#D2D2D2));
+	border-radius:10px;
+	-moz-border-radius:10px;
+	text-shadow:rgba(255,255,255,0.55) 0px 1px 1px;
+	-webkit-border-radius:10px;
+	color:black  !important;
+	padding:1.5px 9px;
+	border:1px solid #a8a8a8;
+	text-decoration:none !important;
+}
+.moreconf button:hover,.moreconf a:hover,button:hover,.postact_right a:hover,.postauthor p a.lightlink:hover,.thankbutton:hover {
+	text-decoration:none !important;
+}
+.thankbutton {
+	line-height:15px;
+	margin-top:-2px;
+}
+.postauthor p a.lightlink:active,.postauthor p a.lightlink,.nickname {
+	font-style:italic;
+	text-shadow:rgba(255,255,255,0.4) 0px 1px 0px;
+	color:#606060;
+	font-size:8pt;
+}
+.nickname {
+	font-size:9pt;
+}
+.custominfoarea a,.custominfoarea a:hover,.custominfoarea a:active {
+	background:none;
+	border:none;
+	padding:0 0;
+}
+a.oneditor,.editor a:hover {
+	border:none !important;
+}
+.editor a {
+	margin:1px 2px !important;
+}
+#searchbox {
+	float:none !important;
+}
+#header h2 {
+	-webkit-transition:all .15s ease-out;
+	-moz-transition:all .15s ease-out;
+}
+#header h2:hover {
+	-webkit-transform:scale(1.07) rotate(-1deg);
+	-moz-transform:scale(1.07) rotate(-1deg);
+}
+@-webkit-keyframes open {
+	0% {
+	color:#dfdfe0;
+	text-shadow:none;
+	letter-spacing:-5px;
+}
+100% {
+	color:#515151;
+	text-shadow:#ffffff 0px 1px 0px;
+	letter-spacing:normal;
+}
+}@-webkit-keyframes  fadein {
+	0% {
+	opacity:0;
+	-webkit-transform:translate(0px,20px)
+}
+100% {
+	opacity:1;
+	-webkit-transform:translate(0px,0px)
+}
+}@-webkit-keyframes fadeout {
+	0% {
+	opacity:1;
+	-webkit-transform:translate(0px,-0px) scale(1)
+}
+100% {
+	opacity:0;
+	-webkit-transform:translate(0px,50px) scale(0)
+}
+}@-webkit-keyframes wobble {
+	0% {
+	opacity:1;
+	-webkit-transform:scale(1) rotate(0deg);
+}
+100% {
+	opacity:1;
+	-webkit-transform:scale(1.1) translate(0px,5px) rotate(0deg)
+}
+}@-webkit-keyframes slide {
+	0% {
+	opacity:1;
+	translate(0px,0px);
+}
+100% {
+	opacity:1;
+	-webkit-transform:translate(5px,0px)
+}
+}.postcontent {
+	-webkit-animation-name:fadein;
+	-webkit-animation-duration:0.4s;
+	-webkit-animation-timing-function:ease-in;
+}
+.searchform {
+	background:none !important
+}
+.rateavatar img {
+	border:2px #fff solid;
+	box-shadow:rgba(0,0,0,0.2) 0px 0px 5px;
+	-webkit-box-shadow:rgba(0,0,0,0.2) 0px 0px 5px;
+	-moz-box-shadow:0px 0px 5px rgba(0,0,0,0.2);
+}
+@-webkit-keyframes acceleratedReveal {
+	0% {
+	-webkit-transform:translate3d(0,-60px,0);
+}
+67% {
+	-webkit-transform:translate3d(0,0,0);
+}
+86% {
+	-webkit-transform:translate3d(0,-2px,0);
+}
+100% {
+	-webkit-transform:translate3d(0,0,0);
+}
+}@-webkit-keyframes reveal {
+	0% {
+	-webkit-transform:translate3d(0,-60px,0);
+}
+86% {
+	-webkit-transform:translate3d(0,-2px,0);
+}
+100% {
+	-webkit-transform:translate3d(0,0,0);
+}
+}@-webkit-keyframes flash {
+	0% {
+	opacity:0.7;
+}
+100% {
+	opacity:1;
+}
+}@-webkit-keyframes fadeSimple {
+	0% {
+	opacity:0;
+}
+100% {
+	opacity:1;
+}
+}#header h2 {
+	-webkit-animation-duration:0.4s;
+	-webkit-animation-name:acceleratedReveal;
+}
+#umenu {
+	-webkit-animation-duration:1s;
+	-webkit-animation-name:acceleratedReveal;
+}
+.quote blockquote a img {
+	background:none;
+	border:none;
+	padding:none
+}
+.imgtitle a {
+	text-decoration:none
+}
+.postattachlist {
+	border-bottom:none !important;
+}
+input#srchtxt.txt {
+	-webkit-appearance:searchfield;
+}
+.forum_bottomshadow,#forum_bottomshadow1 {
+	margin:auto;
+	padding:0px;
+	height:12px;
+	background-image:url(../../images/macidea/shadow-bottom.png);
+	background-repeat:none;
+	background-position:top left;
+	width:1004px;
+}
+.forum_notice {
+	margin:0px auto 0px !important;
+	padding:0px 12px !important;
+	background-image:url(../../images/macidea/bg-content.png) !important;
+	background-repeat:repeat-y;
+	width:980px !important;
+	background-color:transparent !important;
+}
+.forum_notice div {
+	padding:0px 0px !important;
+}
+.threadlist th,.subject,.forumlast,.postmessage h1 {
+	text-transform:capitalize
+}
+.newsection {
+
+	background-repeat:no-repeat;
+	padding:0px 6px 0px 45px
+}
+
+span.t_tag {
+	border-bottom:1px dotted #AAAAAA;
+}
+dl.profile.s_clear dd {
+	letter-spacing:-0.1em;
+}
+.newrate .cornerlayger,.cornerlayger,.t_attach,.t_attach_img {
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	background:rgba(247,247,247,0.9) !important;
+	box-shadow:rgba(0,0,0,0.2) 0px 0px 5px;
+	-webkit-box-shadow:rgba(0,0,0,0.2) 0px 0px 5px;
+	-moz-box-shadow:rgba(0,0,0,0.2) 0px 0px 5px
+}
+#slider {
+	position:relative;
+	width:980px;
+	height:50px;
+	background:url(../../images/macidea/loadingtext.png) no-repeat 50% 50%;
+}
+#slider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+#slider a {
+	border:0;
+	display:block;
+}
+.nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(../../images/macidea/arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	top:20%;
+}
+a.nivo-nextNav {
+	background-position:-30px 0;
+	right:15px;
+}
+a.nivo-prevNav {
+	left:15px;
+}
+.nivo-caption {
+	text-shadow:none;
+}
+.nivo-caption a {
+	color:#efe9d1;
+	text-decoration:underline;
+}
+#slider-wrapper {
+	background:#7d7e7d;
+	background:-moz-linear-gradient(top,#7d7e7d 0%,#0e0e0e 100%);
+	background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#7d7e7d),color-stop(100%,#0e0e0e));
+	width:980px;
+	height:50px;
+	margin:0 auto;
+}
+.float_typeid ul {
+	left:282px !important;
+}
+#loginform .selectinput {
+	background:none;
+	height:30px;
+	border:none
+}
+a#loginfield_selectinput {
+	background:none
+}
+#loginform input.txt,.regform input.txt,#recaptcha_response_field {
+	border:1px solid silver;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	width:153px;
+}
+#loginform input.txt:focus,.regform input.txt:focus,#recaptcha_response_field:focus {
+	outline:none;
+	-webkit-transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	border-color:rgba(82,168,236,.75)!important;
+	box-shadow:0 0 8px rgba(82,168,236,.5);
+	-moz-box-shadow:0 0 8px rgba(82,168,236,.5);
+	-webkit-box-shadow:0 0 8px rgba(82,168,236,.5);
+}
+.with_side .content {
+	width:750px !important;
+}
+a:focus {
+	outline:none;
+}
+button::-moz-focus-inner {
+	border:0;
+}
+.smilieslist {
+	background:#F6F6F6;
+	background:-moz-linear-gradient(top,#feffff 0%,#F6F6F6 100%);
+	background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#feffff),color-stop(100%,#F6F6F6));
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+#modarea_c {
+	background:#ffffff;
+	background:-moz-linear-gradient(top,#ffffff 0%,#FAFAFA 47%,#F2F2F2 74%,#E6E6E6 100%);
+	background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#ffffff),color-stop(47%,#FAFAFA),color-stop(74%,#F2F2F2),color-stop(100%,#E6E6E6));
+}
+#headingwrap,#rankwrap {
+	padding:10px;
+	height:100px;
+	background:#FFFFFF url(../../images/macidea/hgradient.png) repeat-x;
+	background:-moz-linear-gradient(top,#FFFFFF 0%,#E0E0E0 99%);
+	background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#FFFFFF),color-stop(99%,#E0E0E0));
+	overflow:hidden;
+	display:block;
+	border-bottom:1px black solid;
+}
+#rankwrap {
+	height:70px;
+}
+#headingwrap .headline {
+	float:left
+}
+.headingimage {
+	width:auto;
+	height:90px;
+	max-width:90px;
+	float:left;
+	margin-left:5px;
+	margin-right:10px;
+	overflow:hidden;
+	display:block;
+	border:2px solid #fff;
+	-webkit-box-shadow:0px 2px 3px #5e5e5e;
+	-moz-box-shadow:0px 2px 3px #5e5e5e;
+	box-shadow:0px 2px 3px #5e5e5e;
+}
+.headingimage img {
+	height:100%;
+	width:auto;
+	max-height:90px;
+}
+.heading {
+	width:625px;
+}
+.hseparator {
+	float:left;
+	width:20px;
+	height:100%;
+	background: center no-repeat;
+	margin-right:5px
+}
+.heading .subject {
+	font-size:10pt;
+	font-weight:bold;
+}
+#newstopic {
+	height:95px;
+	display:block;
+	overflow:hidden;
+}
+#rankwrap {
+	padding:10px;
+	height:70px;
+	background:#0e0e0e;
+	background:-moz-linear-gradient(top,#7d7e7d 0%,#0e0e0e 100%);
+	background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#7d7e7d),color-stop(100%,#0e0e0e));
+	overflow:hidden;
+	display:block;
+	border-bottom:1px black solid;
+}
+.rankinfo {
+	float:left;
+	width:180px;
+	height:50px;
+	position:relative;
+	top:35%;
+	left:20px;
+	font-size:16pt;
+	color:#fff;
+	text-shadow:0px -1px 1px #000000;
+}
+.ranknode {
+	float:left;
+	width:70px;
+	height:70px;
+	display:block;
+	overflow:hidden;
+	text-align:center;
+	padding-top:2px;
+}
+.ranknode a {
+	color:#c4c4c4;
+	text-shadow:0px -2px 0px #000000;
+}
+.ranknode img {
+	-webkit-transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	width:48px;
+	height:48px;
+	-webkit-box-shadow:0px 2px 2px #000;
+	-moz-box-shadow:0px 2px 2px #000;
+	box-shadow:0px 2px 2px #000;
+	opacity:0.8;
+	border:none;
+}
+.ranknode:hover img {
+	opacity:1;
+}
+.ranknode:hover a {
+	color:#fff;
+	text-decoration:none;
+}
+.avatar-frame {
+	border:3px solid silver;
+}
+.avatar-frame:hover {
+	border:3px solid white;
+}
+.avatar-frame,.avatar-frame img {
+	width:48px;
+	height:48px;
+	margin:auto;
+	-webkit-border-radius:30px;
+	border-radius:30px;
+	-moz-border-radius:30px;
+}
+.postmessage .typeoption {
+	-webkit-box-shadow:0px 0px 2px #858585;
+	-moz-box-shadow:0px 0px 2px #858585;
+	box-shadow:0px 0px 5px #858585;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	width:600px;
+	margin:10px;
+}
+.typeoption h4 {
+	text-align:center
+}
+#centered2.avatar a img {
+	max-width:123px;
+}
+.selecttype ul,.float_typeid ul,.showselect_menu,.popupmenu_popup {
+	border:1px solid silver !important;
+	background:-moz-linear-gradient(top,#feffff 0%,#F6F6F6 100%)  !important;
+	background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#feffff),color-stop(100%,#F6F6F6)) !important;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	-webkit-box-shadow:0px 2px 10px #ababab;
+	-moz-box-shadow:0px 2px 10px #ababab;
+	box-shadow:0px 2px 10px #ababab;
+}
+.float_typeid a {
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+input#subject.txt,#reason.txtarea {
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+input#score1.txt,input#score2.txt,input#score3.txt,input#score4.txt {
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+	outline:none
+}
+#rateform a.dropdownbtn {
+	-moz-border-radius-topright:3px;
+	-moz-border-radius-bottomright:3px;
+	border-top-right-radius:3px;
+	border-bottom-right-radius:3px;
+}
+.editorrow,.editor_tb {
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-topright:3px;
+	border-top-left-radius:3px;
+	border-top-right-radius:3px;
+}
+.newediter,#f_post .txtarea {
+	-moz-border-radius-bottomright:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-bottom-right-radius:3px;
+	border-bottom-left-radius:3px;
+}
+#e_textarea {
+	outline:none
+}
+.validateinfo {
+	padding-left:60px !important;
+}
+.float_typeid ul li:hover,.selecttype ul li:hover {
+	background:#5DACE7;
+	background:-moz-linear-gradient(top,#5DACE7 0%,#0074CB 100%);
+	background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#5DACE7),color-stop(100%,#0074CB));
+	color:#fff !important;
+	text-shadow:0px 1px 1px #424242;
+	font-weight:bold;
+}
+.float_typeid ul li,.selecttype ul li {
+	margin:0 0 !important;
+	padding:0 4px;
+	line-height:16pt !important;
+}
+#modlayer {
+	border:1px silver solid !important;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	-webkit-box-shadow:0px 5px 15px #4f4f4f;
+	-moz-box-shadow:0px 5px 15px #4f4f4f;
+	box-shadow:0px 5px 15px #4f4f4f;
+	background-color:rgba(255,255,255,0.85)
+}
+#avatarctrl embed {
+	height:477px !important;
+}
+.floatwinmask {
+	-webkit-animation-duration:0.4s;
+	-webkit-animation-name:fadeMask;
+}
+.floatwin,#modlayer {
+	-webkit-animation-duration:0.4s;
+	-webkit-animation-name:pop;
+}
+.floatbox,.popupmenu_popup,t_attach {
+	-webkit-animation-duration:0.6s;
+	-webkit-animation-name:fadeSimple;
+}
+.ranknode {
+	-webkit-transform:scale(1);
+}
+.ranknode:hover {
+	-webkit-transform:scale(1.1);
+}
+.postbtn:hover,.replybtn:hover {
+	background-color:#8fb3e9;
+	-webkit-box-shadow:0px 0px 10px #2676ed;
+	-moz-box-shadow:0px 0px 10px #2676ed;
+	box-shadow:0px 0px 10px #2676ed;
+}
+.postbtn,.replybtn {
+	-webkit-transition:all 0.2s linear
+}
+.ranknode:hover {
+	-webkit-transition:all 0.2s ease !important;
+}
+@-webkit-keyframes fadeMask {
+	0% {
+	opacity:0;
+}
+100% {
+	opacity:0.6;
+}
+}@-webkit-keyframes pop {
+	0% {
+	opacity:0;
+	-webkit-transform:scale(0.2);
+}
+60% {
+	opacity:0.75;
+	-webkit-transform:scale(1.1)
+}
+100% {
+	opacity:1;
+	-webkit-transform:scale(1)
+}
+}.t_msgfont img,.t_msgfontfix img,.signatures img,.avatar img {
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+}
+.pages_btns,.content_nopadding .list h3,.content .list h3,.colplural,.colplural th,.colplural div,.threadlist .colplural th,.threadlist .colplural div,.forumcontrol,.modaction,.forumcontrol table,.moreconf button,.moreconf a,button,.postact_right a {
+	box-shadow:inset 0px 1px 0px rgba(255,255,255,.5);
+	-webkit-box-shadow:inset 0px 1px 0px rgba(255,255,255,.5);
+	-moz-box-shadow:inset 0px 1px 0px rgba(255,255,255,.5);
+}
+#modarea,#subforum {
+	border-radius:5px
+}
+#subforum h3 {
+	border-top-left-radius:5px;
+	border-top-right-radius:5px
+}
+#modarea_c img,#modarea_c,#subforum div:last-child {
+	border-bottom-right-radius:5px;
+	border-bottom-left-radius:5px
+}
+.avatar img:first-child {
+	box-shadow:0px 1px 2px rgba(0,0,0,.3);
+	-webkit-box-shadow:0px 1px 2px rgba(0,0,0,.3);
+	-moz-box-shadow:0px 1px 2px rgba(0,0,0,.3)
+}
+.rateopt {
+	overflow:hidden !important
+}
+.avatar-frame {
+	box-shadow:0px 2px 0px black;
+	-webkit-box-shadow:0px 2px 0px black;
+	-moz-box-shadow:0px 2px 0px black;
+	border:3px solid rgba(255,255,255,0.6);
+}
+#headingwrap {
+	border-bottom:1px solid silver;
+}
+.avatar img:first-child {
+	border-radius:5px;
+	max-height:200px;
+	max-width:125px;
+}
+.titlelist li {
+	background:none !important
+}
+#slider-wrapper {
+	height:64px
+}
+#rankwrap {
+	background:url("/images/macidea/tnoise.png") repeat,-webkit-gradient(linear,left top,left bottom,color-stop(0%,#7D7E7D),color-stop(100%,#0E0E0E));
+}
+.floatwinmask,#fancybox-overlay {
+	background:url("/images/macidea/cross.png") repeat,-webkit-radial-gradient(rgba(127,127,127,0.3),rgba(127,127,127,0.5) 35%,rgba(0,0,0,1)) !important
+}
+#modarea_c img {
+	border-radius:5px;
+}
+.forumlisting h2,.forumlisting2 h2 {
+	font-size:9.5pt;
+}
+span.todayposts,.threadtype strong {
+	background:#9A9FAA;
+	color:white !important;
+	font-size:10px;
+	font-weight:bold;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	padding:1px 5px 1px 5px;
+	display:inline !important;
+	width:auto;
+	margin-top:2px;
+	margin-left:5px;
+	text-shadow:#585858 0px 1px 1px;
+	box-shadow:inset 0px 1px 1px #555555,0px 1px 0px white;
+	-moz-box-shadow:inset 0px 1px 1px #555555,0px 1px 0px white;
+	-webkit-box-shadow:inset 0px 1px 1px #555555,0px 1px 0px white;
+}
+.threadtype strong {
+	font-size:9pt;
+	margin-left:0px;
+}
+.sub {
+	padding-top:3px;
+	padding-bottom:3px;
+}
+#ajaxwaitid {
+	position:fixed;
+	top:50%;
+	right:50%;
+	margin-right:-75px;
+	margin-top:-25px;
+	background:rgba(0,0,0,0.5);
+	color:white;
+	height:50px;
+	line-height:50px;
+	z-index:9999;
+	border-radius:5px;
+	width:150px;
+	font-size:20px;
+}
+#umenu,#rankwrap,#ajaxwaitid,.content_nopadding .list h3,.content .list h3,.left h2 {
+	-webkit-font-smoothing:antialiased;
+}
+font[face] {
+	font-family:Lucida Grande,Calibri,trebuchet MS,Helvetica,Arial,Hiragino Sans GB,WenQuanYi Micro Hei,STHeiti,Microsoft Jhenghei,sans-serif !important;
+}
+#fancybox-outer,.floatwin {
+	-webkit-box-shadow:0 25px 50px rgba(0,0,0,0.5) !important;
+	-moz-box-shadow:0 25px 50px rgba(0,0,0,0.5) !important;
+	box-shadow:0 25px 50px rgba(0,0,0,0.5) !important;
+}
+.fancybox-title-outside a {
+	color:white;
+	font-weight:bold;
+	text-shadow:0px 1px 3px black;
+}
+#recaptcha_image {
+	display:none;
+}
+a.typeid,a.sortid {
+	color:#999 !important;
+	margin-right:5px;
+}
+span.bullsep {
+	color:#999 !important;
+}
+.label {
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	padding:0px 2px;
+	font-size:10.5px;
+	text-transform:uppercase;
+	white-space:nowrap;
+	-webkit-text-size-adjust:none;
+	text-shadow:0 1px 0 rgba(255,255,255,0.5);
+	background-color:#FCF8E3;
+	border:1px solid #FBEED5;
+	color:#C09853;
+	box-shadow:0px 1px 0px rgba(255,255,255,0.7);
+}
+.label-warning {
+	background-color:#F2DEDE;
+	border-color:#EED3D7;
+	color:#B94A48;
+}
+.label-success {
+	background-color:#DFF0D8;
+	border-color:#D6E9C6;
+	color:#468847;
+}
+.bold {
+	font-weight:bold;
+}
+.mainbox div.postauthor {
+	text-shadow:0px 1px 0px rgba(255,255,255,0.55);
+}
+.info_status {
+	color:#606060
+}
+.postauthor p a.lightlink:active,.postauthor p a.lightlink,.nickname {
+	font-style:normal;
+}
+#footer a,#footer {
+	color:white;
+	text-shadow:0px 0px 5px black;
+}
+.floatboxswf {
+	margin-left:5px;
+}
+.floatboxswf div {
+	margin-left:10px;
+	width:570px;
+	height:318px;
+	border:1px solid #CCC;
+}
+.float_postinfo {
+	height:22px;
+	line-height:22px;
+}
+.float_postinfo em {
+	float:left;
+	margin-right:5px;
+	padding-left:3px;
+	height:20px;
+	border:1px solid;
+	border-color:#c0c0c0 #c0c0c0 #c0c0c0 #c0c0c0;
+	background-color:#FFF;
+	cursor:pointer;
+}
+.float_postinfo em img {
+	margin-top:2px;
+}
+.float_postinfo input {
+	float:left;
+	margin-right:5px;
+}
+.float_postinfo #subject {
+	width:255px;
+}
+.specialpost {
+	overflow:hidden;
+	margin:15px 0 5px;
+}
+.specialinfo {
+	float:left;
+	overflow-x:hidden;
+	overflow-y:auto;
+	padding-right:14px;
+	width:370px;
+	height:285px;
+	border-right:1px dashed #CCC;
+}
+.specialpost p {
+	padding:2px 0;
+	height:30px;
+	line-height:30px;
+}
+.specialinfo textarea {
+	width:360px;
+	height:80px;
+}
+.optionnum,.optioninfo {
+	float:left;
+	width:16px;
+	margin-right:6px;
+}
+.optioninfo {
+	width:300px;
+}
+.specialinfo dl,.specialaddons dl {
+	margin:5px 0;
+}
+.specialinfo dl dt,.specialaddons dl dt {
+	float:left;
+	width:62px;
+	font-weight:700;
+	clear:left;
+}
+.specialaddons dl dt {
+	font-weight:400;
+}
+.specialinfo dl dd,.specialaddons dl dd {
+	margin:5px 0 15px 65px;
+	display:inherit;
+}
+.specialinfo dl dd strong {
+	padding:0 8px;
+}
+.specialaddons {
+	float:left;
+	margin-left:10px;
+	width:170px;
+	overflow:hidden;
+}
+.spaoptlist p {
+	height:20px;
+	line-height:20px;
+}
+.spaoptlist input[type=radio] {
+	margin:0 3px 0 0;
+}
+.spslonginput {
+	width:280px;
+}
+.splonginput {
+	width:150px;
+}
+.spmediuminput {
+	width:90px;
+}
+.specialaddons select.spmediuminput {
+	width:96px;
+}
+.spshortinput {
+	width:30px;
+}
+.sppoll {
+	height:247px;
+	overflow:auto;
+}
+.sppoll p {
+	clear:both;
+	*padding:1px 0 2px;
+	height:auto;
+	line-height:auto !important;
+}
+.goodsimg {
+	margin:0 10px 0 0;
+	width:120px;
+	height:120px;
+	border:1px solid #AAA;
+}
+.classifieds {
+	margin:10px 0;
+	height:275px;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+.classifieds .formtable th {
+	vertical-align:top;
+	width:70px;
+}
+.classifieds .txt {
+	width:600px;
+}
+.classifieds .txtarea {
+	width:600px;
+	height:58px;
+}
+.classifieds .inlinelist {
+	float:left;
+	width:610px;
+}
+.classifieds .inlinelist li {
+	float:left;
+	margin-bottom:5px;
+	width:33%;
+}
+.classifieds_narrow {
+	margin:0;
+	height:auto;
+}
+.classifieds_narrow .formtable th {
+	width:60px;
+}
+.classifieds_narrow .txt,.classifieds_narrow .txtarea {
+	width:150px;
+}
+.classifieds_narrow .inlinelist {
+	width:160px;
+}
+.classifieds_narrow .inlinelist li {
+	float:left;
+	width:50%;
+}
+.post_tablelist {
+	}.post_tablelist table {
+	*table-layout:fixed;
+}
+.post_tablelist table div {
+	height:28px;
+	line-height:28px;
+	border-bottom:1px solid #CCC;
+}
+.attachnum {
+	width:16px;
+}
+.attachctrl {
+	width:40px;
+}
+.attachname {
+	}.attachname input {
+	margin-top:2px;
+}
+* html .attachname p {
+	margin-top:6px;
+}
+* html .attachname p input {
+	margin-top:-4px;
+}
+.attachname .txt,.attachname_swf .txt {
+	width:300px;
+}
+.attachname p img,.attachname_swf p img {
+	vertical-align:middle;
+	height:16px;
+}
+.attachview,.attachpr {
+	width:60px;
+	text-align:center;
+}
+.attachview .txt,.attachpr .txt {
+	width:40px;
+}
+.attachdel {
+	width:40px;
+}
+.upfilelist {
+	height:140px;
+	overflow:auto;
+	overflow-x:hidden;
+}
+.sim_upfile {
+	overflow:hidden;
+	margin-left:10px;
+	*margin-left:15px;
+}
+.sim_upfile input {
+	position:absolute;
+	margin-left:-19px;
+	*margin:3px 0 0 -24px;
+	width:70px;
+	height:20px;
+	filter:alpha(opacity=0);
+	opacity:0;
+	cursor:pointer;
+}
+.sim_upfile .sitenote {
+	z-index:15;
+	bottom:29px !important;
+	bottom:21px;
+	left:1px;
+}
+.sim_upfile .sitenote .minicorner {
+	background-position:70px 0;
+}
+.extcreditbox {
+	height:350px;
+	width:100%;
+	overflow:auto;
+}
+.extname {
+	width:100px;
+}
+.extcredits {
+	width:80px;
+}
+.columntype {
+	margin-top:15px;
+}
+.posttags strong,.columntype strong {
+	font-weight:700;
+}
+.posttags p,.columntype p {
+	margin-bottom:5px;
+}
+.posttags .txt {
+	margin-right:8px;
+	width:280px;
+}
+.columntype .txt {
+	vertical-align:baseline;
+	width:40px;
+}
+.columntype table {
+	margin:5px 0 0 -12px;
+	width:85%;
+}
+.columntype div {
+	padding:0 10px;
+	vertical-align:top;
+	border-left:1px dashed #CCC;
+}
+.firstlist {
+	border:none !important;
+}
+.editor_cell {
+	vertical-align:top;
+}
+#editor {
+	border:solid;
+	border-color:#EDEDED;
+	border-width:1px 1px 0;
+	background:#f6f6f6;
+}
+#editor div {
+	border:none;
+	padding:2px;
+}
+.editortoolbar table {
+	width:auto;
+}
+.editortoolbar a,.editortoolbar .a {
+	display:block;
+	cursor:pointer;
+}
+.editortoolbar a.hover,.editortoolbar a:hover,.editortoolbar .a1 {
+	background-color:;
+	text-decoration:none;
+}
+.editor_switcher_bar {
+	position:relative;
+}
+.editor_switcher_bar a {
+	float:right;
+	padding:0 3px;
+	margin-right:5px;
+}
+.editor_switcher_bar button {
+	border:1px solid;
+	border-color:#EDEDED #EDEDED #f6f6f6 #EDEDED;
+	font-weight:bold;
+	height:30px;
+	he\ight:28px;
+	line-height:28px;
+	background:#f6f6f6;
+	margin:0 2px;
+	position:relative;
+	cursor:pointer;
+}
+*+html .editor_switcher_bar button {
+	top:1px;
+}
+* html .editor_switcher_bar button {
+	top:1px;
+}
+.editor_switcher_bar .editor_switcher {
+	border-bottom-color:#EDEDED;
+	font-weight:normal;
+}
+.editor_text {
+	border:1px solid;
+	border-color:#EDEDED #EDEDED #EDEDED #EDEDED;
+}
+.editor_text textarea {
+	border:none;
+	width:99%;
+	font:10pt/1.6em Avenir,Lucida Grande,Calibri,trebuchet MS,Helvetica,Arial,Hiragino Sans GB,WenQuanYi Micro Hei,STHeiti,Microsoft Jhenghei,Nanum Gothic,sans-serif;
+}
+.editor_button {
+	background:#f6f6f6;
+	border:solid #EDEDED;
+	border-width:0 1px 0;
+	margin-bottom:;
+}
+.editor_button button {
+	background:transparent;
+	border-width:0 0 0 1px;
+	color:#3b6e8e;
+}
+.editor_attach {
+	border:1px solid #EDEDED;
+}
+#wysiwyg {
+	background:#FFF !important;
+	font:10pt/1.6em Avenir,Lucida Grande,Calibri,trebuchet MS,Helvetica,Arial,Hiragino Sans GB,WenQuanYi Micro Hei,STHeiti,Microsoft Jhenghei,Nanum Gothic,sans-serif !important;
+}
+#wysiwyg * {
+	line-height:normal;
+}
+#wysiwyg a {
+	text-decoration:underline;
+	color:#3b6e8e !important;
+	color:#3b6e8e;
+}
+#wysiwyg li {
+	margin-left:2em;
+}
+#wysiwyg ul li {
+	list-style-type:disc;
+}
+#wysiwyg ul.litype_1 li {
+	list-style-type:decimal;
+}
+#wysiwyg ul.litype_2 li {
+	list-style-type:lower-alpha;
+}
+#wysiwyg ul.litype_3 li {
+	list-style-type:upper-alpha;
+}
+#wysiwyg strong,#wysiwyg b {
+	font-weight:bold;
+}
+#wysiwyg em,#wysiwyg i {
+	font-style:italic;
+}
+#wysiwyg p {
+	margin:0 !important;
+}
+#wysiwyg table div {
+	padding:4px;
+	border:1px solid;
+}
+.fontname_menu {
+	width:97px;
+}
+.fontsize_menu {
+	width:27px;
+	line-height:normal;
+}
+.fontsize_menu ul li {
+	line-height:normal;
+}
+#e_popup_table_menu {
+	width:220px;
+}
+.fontname_menu li,.fontsize_menu li {
+	cursor:pointer;
+}
+.editor_colornormal,.editor_colorhover {
+	border:none !important;
+	padding:2px !important;
+}
+.editor_colornormal div {
+	width:10px;
+	height:10px;
+	overflow:hidden;
+	cursor:pointer;
+	border:1px solid #f6f6f6;
+}
+.editor_colorhover div {
+	width:10px;
+	height:10px;
+	overflow:hidden;
+	cursor:pointer;
+	border:1px solid #000;
+}
+.swfwin {
+	border:3px solid #7FCAE2;
+}
+#e_iframe {
+	width:100%;
+	border:none;
+	margin:0;
+	padding:0;
+}
+#e_textarea {
+	width:100%;
+	padding:0;
+}
+.editorrow {
+	margin-top:5px;
+	padding:3px;
+	height:18px;
+	overflow:hidden;
+	line-height:17px;
+	border:1px solid;
+	border-color:#c0c0c0 #c0c0c0 #c0c0c0 #c0c0c0;
+	clear:both;
+	background:url(../../images/macidea/editorbg.gif);
+}
+.editor {
+	text-align:left;
+}
+.editorbtn {
+	margin-right:50px;
+}
+.editor em {
+	margin:0 5px;
+	float:left;
+	display:block;
+	height:20px;
+	width:3px;
+	background:url(../../images/common/editor.gif) no-repeat 0 -701px;
+	border:1px solid #f6f6f6;
+}
+.editor a {
+	margin:1px 0;
+	float:left;
+	text-align:left;
+	text-decoration:none;
+	display:block;
+	height:21px;
+	width:20px;
+	background:url(../../images/common/editor.gif) no-repeat 0 30px;
+	text-indent:-9999px;
+	overflow:hidden;
+	border:none;
+}
+a.oneditor,.editor a:hover {
+	background:#F6F6F6 url(../../images/common/editor.gif) no-repeat 0 21px;
+	border:1px solid #c0c0c0;
+}
+#e_cmd_bold {
+	background-position:0 0;
+}
+#e_popup_simple {
+	background:url(../../images/macidea/newarow.gif) -7px -2px;
+	width:8px;
+}
+#e_popup_fontname {
+	background-position:0 -21px;
+}
+#e_popup_fontsize {
+	background-position:0 -41px;
+}
+#e_popup_forecolor {
+	background-position:0 -81px;
+}
+#e_popup_justify {
+	background-position:0 -61px;
+}
+#e_cmd_createlink {
+	background-position:0 -121px;
+}
+#e_cmd_email {
+	background-position:0 -141px;
+}
+#e_cmd_insertimage {
+	background-position:0 -161px;
+}
+#e_popup_media {
+	background-position:0 -541px;
+}
+#e_cmd_quote {
+	background-position:0 -441px;
+}
+#e_cmd_code {
+	background-position:0 -461px;
+}
+#e_popup_list {
+	background-position:0 -261px;
+}
+#e_popup_dent {
+	background-position:0 -301px;
+}
+#e_popup_float {
+	background-position:0 -341px;
+}
+#e_cmd_table {
+	background-position:0 -381px;
+}
+#e_cmd_free {
+	background-position:0 -401px;
+}
+#e_cmd_hide {
+	background-position:0 -421px;
+}
+#e_popup_smilies {
+	background-position:0 -101px;
+}
+#e_popup_tools {
+	background-position:0 -181px;
+}
+a.editormode {
+	float:right;
+	right:20px;
+	width:50px;
+	background:none;
+	text-align:right;
+	text-decoration:none !important;
+}
+*html a.editormode {
+	right:50px;
+}
+a.plugeditor {
+	text-indent:0;
+	background-position:0 40px;
+}
+a.editormode:hover {
+	background:#F6F6F6;
+	border-color:#c0c0c0;
+}
+a.upmedia {
+	width:68px;
+}
+#e_cmd_bold {
+	font-weight:700;
+	text-decoration:none;
+}
+#e_cmd_italic {
+	font-style:italic;
+	text-decoration:none;
+}
+#e_cmd_underline {
+	text-decoration:underline;
+}
+.newediter {
+	border-style:solid;
+	border-color:#c0c0c0 #c0c0c0 #c0c0c0 #c0c0c0;
+	border-width:0px 1px 1px;
+	padding:0px 0px 0px 4px;
+	background:#FFF;
+}
+.newediter .autosave {
+	padding:0 2px;
+	width:562px;
+	height:87px;
+	border-width:1px;
+	border:none;
+	background:#FFF;
+}
+.newediter .max {
+	height:257px;
+}
+a.customedit {
+	text-indent:0 !important;
+}
+.popupfix {
+	min-width:330px;
+	white-space:nowrap;
+}
+*+html .popupfix {
+	min-width:280px;
+}
+#e_cmd_table_menu {
+	width:220px !important;
+	min-width:220px !important;
+}
+#e_cmd_insertimage_menu {
+	*width:380px;
+}
+#e_cmd_insertimage_menu li {
+	clear:none;
+}
+#uch_photoes {
+	margin:5px;
+}
+#uch_photoes table {
+	border-collapse:separate;
+}
+#uch_photoes table div {
+	padding:2px;
+	width:82px;
+	height:82px;
+	border:1px solid #c1c5ca;
+	vertical-align:middle;
+	text-align:center;
+}
+#uch_photoes table div img {
+	padding:3px;
+	max-width:80px;
+	max-height:80px;
+}
+* html #uch_photoes table div img {
+	width:expression(this.width > 80 && this.height < this.width ? 80:true);
+	height:expression(this.height > 80 ? 80:true);
+}
+
+
+#self{
+	min-height: 40px;
+}
+.wrap h2.logo{
+	margin-top: 10px;
+	color:#FFF;
+	font-size:40px;
+	text-shadow:0px 1px 50px #000;
+}
+#fastpostmessage{
+	border-radius:4px;
+	margin-left:50px;
+	margin-top:10px;
+}
+#post{
+	margin-left: 50px;
+	margin-bottom: 30px;
+}
+
+/*???????????????*/
+.flow_show{
+
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-color: black;
+    z-index: 100;
+}
+.reg_show{
+	-webkit-animation-duration:1s;
+	-webkit-animation-name:acceleratedReveal;
+    box-shadow: 0 0 20px #000;
+    background-color: #FFF;
+    position: fixed;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;              
+    z-index: 1001;
+    top:15%;
+
+}
+#rightinfo,#footlink{
+	color:#FFF;
+}
+#postcontent{
+	height:120px;
+}
+#postcontent p{
+	margin-left: 30px;
+    float: left;
+    width: 500px;
+    margin-top: 10px;
+}
+.forumnums,.forumlast{
+	float: right;
+    display: inline;
+}
+.post_lists{
+	height:135px;
+	border-bottom:1px solid #EEE;
+}
+.post_lists h2{
+	 padding-top: 10px;
+}
+#list_double{
+	background-color: #EFF4F9;
+}
+#fastpostmessage{
+	height:95px;
+	width:405px;
+}
+#f_post{
+	padding-top: 30px;
+}
+div #f_post{
+	height:150px;
+}
+#reg,#login{
+	display: none;
+}
+#reg_close,#login_close{
+	float: right;
+	position: relative;
+	width:30px;
+	height:30px;
+	background-image: url("http://treeforests.sinaapp.com/highslide/graphics/close.png");
+}
+#reg_close:hover,#login_close:hover{
+	cursor: pointer;
+}
+#reg_form,#login_form{
+	position: relative;
+	margin-left:210px;
+	margin-top:20px;
+}
+.btn{
+	background-color: #51aee0;
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0,#3fa0d9),color-stop(1,#62bce6));
+	border-radius:5px;
+	border:1px solid #1e82ca;
+	float:left;
+	width:90px;
+	height:20px;
+	text-decoration: none;
+	text-align: center;
+	font-size:19px;
+	padding-top: 6px;
+	margin-left:40px;
+	color:#FFF;
+}
+.btn:hover{
+	cursor: pointer;
+}
+input[type="text"],input[type="password"]{
+	border-radius: 5px;
+	border:	1px solid #BBB;
+}
+#reg_zc,#login_dl{
+    float: left;
+    font-size: 50px;
+    margin-top: 40px;
+    margin-left: 25px;
+}

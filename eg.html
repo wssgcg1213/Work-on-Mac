@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="Keywords" content="z-index,IE,Firefox,stacking context,stack level" />
+<meta http-equiv="Description" content="这是一个在火狐中测试层叠级别（stack level)的页面" />
+<meta content="all" name="robots" />
+<meta name="author" content="rong179，rong179@yahoo.cn" />
+<meta name="copyright" content="http://rong179.blogbus.com" />
+<title>stack level 在火狐中的测试</title>
+<style type="text/css" media="all">
+#container {position:relative;left:100px;z-index:0;background: purple;width:500px;}
+#container div {height:200px;width:200px;}
+#box-p-zn { position:relative;z-index:-1;background-color:yellow; top:-25px;left:-30px;}
+#box-block {background-color: aliceblue;margin-top:-30px;margin-left:150px;}
+#box-float {float:left;margin:-50px 100px 0 0;background-color: red;}
+#box-inline {background-color: gray;display:inline;padding:50px 0;}
+#box-p-za { position: absolute; top:50px;left:50px; background-color: green;}
+#box-p-zp { position: relative;z-index:1;background-color: greenyellow;}
+</style>
+</head>
+<body>
+<div id="container">
+<div id="box-p-zp">这个box position:relative;z-index:1;定位元素z-index值为正 </div>
+<div id="box-p-za">这个box position:absolute;z-index:auto;定位元素z-index值auto</div>
+<div id="box-inline">这个box inline;<br />inline元素</div>
+<div id="box-float">这个box float;
+<br /><br /><br /><br /><br /><br />未定位的浮动元素</div>
+<div id="box-block">----这个box block;未定位的块级元素</div>
+<div id="box-p-zn">这个box z-index:-1;定位元素z-index值为负</div>
+<!-
+调试之用
+-->
+</div>
+</body>
+</html> 

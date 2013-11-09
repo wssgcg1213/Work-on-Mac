@@ -1,0 +1,52 @@
+<html>
+<head>
+<style>
+@-webkit-keyframes holder{
+	0%{
+		opacity: 1;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+#holder{
+	display: inline-block;
+	height: 1em;
+	width: 6px;
+	background-color: black;
+	-webkit-animation-name: holder;
+	-webkit-animation-duration: .8s;
+	-webkit-animation-iteration-count: infinite;
+}
+</style>
+
+
+</head>
+
+<body>
+<div id="wrap">
+<span id="tw"></span><span id="holder"></span>
+
+</div>
+
+
+
+<script>
+function tw(){
+		var x = "首先要明白什么是白平衡, 它指的是在图像处理的过程中, 对原本材质为白色的物体的图像进行色彩还原, 去除外部光源色温的影响, 使其在照片上也显示白色.那色温是怎么理解的呢？这个概念其实有点绕, 它是开尔文通过黑体(blackbody) 这一理想光源, 在不同温度下, 所发出光线的颜色特性来定义的。黑体是一个理想化的概念。它是这么一个物体, 能发光, 但会吸收掉任何来自外部的光线, 同时又会把吸收的所有能量以光的形式完全释放出来, 所以叫做黑体。黑体的温度单叫做开尔(K)。从 3300K 到 9300K 的温度变化情况下, 它发光的颜色分别是, 红色, 白色、蓝色。便于理解, 你可以这么想象, 火焰你肯定见过, 内焰温度较低, 外焰温度较高(蓝色), 内焰温度较低的地方是黄色的(暖色), 于是火焰最外面温度最高的地方反而会是蓝色的(冷色), 是不是有点反常识。而色温就是借助黑体的这个温度变化特性来量化色彩倾向的。色温数值低, 偏黄, 色温数值高, 偏蓝, 所谓的冷暖色调就是一种比较感性的叫法了。";
+		var ele = document.getElementById("tw");
+		ele.innerHTML += x.substr(ele.innerHTML.length,1);
+
+	}
+
+setInterval("tw()",100);
+
+
+
+</script>
+
+</body>
+</html>

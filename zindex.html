@@ -1,0 +1,41 @@
+<html>
+<head>
+<style>
+.red, .green, .blue {
+	position: absolute;
+  width:100px;
+  height:100px;
+}
+.red {
+  background: red;
+  z-index: 1;
+  position: relative;
+}
+.green {
+  background: green;
+  top:50px;
+  left:50px;
+}
+.blue {
+  background: blue;
+   top:100px;
+  left:100px;
+}
+div:first-child{
+	opacity: 0.99;
+}
+</style>
+</head>
+<body>
+<div class="red" >
+  <span>Red</span>
+</div>
+<div class="green">
+  <span>Green</span>
+</div>
+<div class="blue">
+  <span>Blue</span>
+</div>
+
+</body>
+</html>
