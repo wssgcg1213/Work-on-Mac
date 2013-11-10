@@ -2,6 +2,7 @@
 //九九乘法表
 class multi{
 
+	//数字To中文
 	function toZw($num){
 		switch ($num) {
 			case '1':
@@ -31,10 +32,14 @@ class multi{
 			case '9':
 			    $out="九";
 				break;
+			default:
+				$out="";
+				break;
 		}
 		return $out;
 	}
 	
+	//转换
 	function format_out($in){
 		$fir = substr($in, 0, 1);
 		$sec = substr($in, 1, 1);
@@ -48,6 +53,7 @@ class multi{
 		return $out;
 	}
 	
+	//输出乘法表并转换
 	function print_99(){
 			for($i=1;$i<=9;$i++){
 				for($j=1;$j<=$i;$j++){
@@ -66,6 +72,8 @@ $multi -> print_99();
 echo "--------------------------------<br>";
 //斐波那契
 class fabo{
+
+	//递归- -!!
 	function fb($raw){
 		if($raw==0)return 0;
 		if($raw==1)return 1;
@@ -88,11 +96,13 @@ echo "--------------------------------<br>";
 //1!到n!的和
 class n{
 
+	//递归- -!!
 	function jc($i){
 		if($i==0||$i==1)return 1;
 		return $i*$this->jc($i-1);
 	}
 
+	//加起来
 	function epxl($i){
 		for($j=1;$j<=$i;$j++){
 			$out+=$this->jc($j);
@@ -122,6 +132,7 @@ class jfc{
 		$this->dlt = $b*$b-4*$a*$c;
 	}
 
+	//通式解方程
 	function j(){
 		if($this->dlt<0){
 			echo "无解<br>";
@@ -130,6 +141,7 @@ class jfc{
 		}
 	}
 
+	//浮点输出
 	function format(){
 		$o = $this->j();
 		if($o){
@@ -138,11 +150,17 @@ class jfc{
 		}
 	}
 
+	//分数输出
 	function formatRaw(){
 		$o = $this->j();
 		if($o){	
 			$m = 2*$this->a;
+			if($this->b<0){
+				$this->b= -$this->b;
+				$q = Array("($this->b+√$this->dlt)/$m","($this->b-√$this->dlt)/$m");
+			}else{
 			$q = Array("(-$this->b+√$this->dlt)/$m","(-$this->b-√$this->dlt)/$m");
+			}
 			if($o[0]==$o[1]){
 				return "*x1=x2=".$q[0].'<br>';
 			}
@@ -150,16 +168,18 @@ class jfc{
 		}
 	}
 
+	//判断是否为整数
 	function isInt($num){
 		if($num-floor($num)==0)return true;
 		return false;
 	}
 
+	//判断并选择输出类型
 	function calc(){
 		if($this->isInt(sqrt($this->dlt)))return $this->format();
 		return $this->formatRaw();
 	}
-}//问题有点多.....例如$b为负时formatRaw输出含--4(其实是4)
+}//问题有点多.....
 
 $fc1 = new jfc(1,1,-5);
 echo $fc1->calc();
