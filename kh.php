@@ -69,7 +69,7 @@ $multi -> print_99();
 
 
 
-echo "--------------------------------<br>";
+echo "<br>-----------------我是分割线---------------<br><br>";
 //斐波那契
 class fabo{
 
@@ -92,7 +92,7 @@ echo $fabo -> fbOut(10);
 
 
 
-echo "--------------------------------<br>";
+echo "<br>-----------------我是分割线---------------<br><br>";
 //1!到n!的和
 class n{
 
@@ -117,7 +117,7 @@ echo $n->epxl(6);
 
 
 
-echo "--------------------------------<br>";
+echo "<br>-----------------我是分割线---------------<br><br>";
 //二元一次方程组
 class jfc{
 	var $a;
@@ -154,12 +154,29 @@ class jfc{
 	function formatRaw(){
 		$o = $this->j();
 		if($o){	
-			$m = 2*$this->a;
+			$m = 2*$this->a; //$m=2a
 			if($this->b<0){
 				$this->b= -$this->b;
-				$q = Array("($this->b+√$this->dlt)/$m","($this->b-√$this->dlt)/$m");
+						 //开始约分
+						 for($y=$m;$y>=2;$y--){
+						 	if($this->isInt($m/$y)&&$this->isInt($this->b/$y)&&$this->isInt($this->dlt/($y*$y))){
+						 		$this->b=$this->b/$y;
+						 		$m=$m/$y;
+						 		$this->dlt=$this->dlt/($y*$y);
+						 		break;//跳出for?
+						 	}
+						 }	
+						 $q = Array("($this->b+√$this->dlt)/$m","($this->b-√$this->dlt)/$m");
 			}else{
-			$q = Array("(-$this->b+√$this->dlt)/$m","(-$this->b-√$this->dlt)/$m");
+						for($y=$m;$y>=2;$y--){
+						 	if($this->isInt($m/$y)&&$this->isInt($this->b/$y)&&$this->isInt($this->dlt/($y*$y))){
+						 		$this->b=$this->b/$y;
+						 		$m=$m/$y;
+						 		$this->dlt=$this->dlt/($y*$y);
+						 		break;//跳出for?
+						 	}
+						 }
+						$q = Array("(-$this->b+√$this->dlt)/$m","(-$this->b-√$this->dlt)/$m");
 			}
 			if($o[0]==$o[1]){
 				return "*x1=x2=".$q[0].'<br>';
@@ -181,7 +198,7 @@ class jfc{
 	}
 }//问题有点多.....
 
-$fc1 = new jfc(1,1,-5);
+$fc1 = new jfc(2,4,1);
 echo $fc1->calc();
 echo '-<br>';
 $fc2 = new jfc(6,13,-89);
