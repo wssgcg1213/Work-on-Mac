@@ -196,7 +196,7 @@ class jfc{
 		if($this->isInt(sqrt($this->dlt)))return $this->format();
 		return $this->formatRaw();
 	}
-}//问题有点多.....
+}
 
 $fc1 = new jfc(2,4,1);
 echo $fc1->calc();
