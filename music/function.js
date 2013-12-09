@@ -1,23 +1,17 @@
 var musicName = new Array(
 	"WestLife - My Love",
-	"井内舞子 - Dear My Friend",
-	"Marc Terenzi - Love to be Loved by you"
+	"井内舞子 - Dear My Friend"
 	);
 var musicSrc = new Array(
 	"music/mylove.aac",
-	"music/dear my friend.mp3",
-	"music/Marc Terenzi - Love to be Loved by you.mp3"
+	"music/dear my friend.mp3"
 	);
 var musicPic = new Array(
 	"album0.jpg",
-	"album1.jpg",
-	"album2.png"
+	"album1.jpg"
 	);
 window.onload=function(){
 	setInterval(scroll,600);
-	canvas_close();
-	canvas_minimode();
-	canvas_minimize();
 }
 function scroll(){
 	var message=document.getElementById("title").innerHTML;
@@ -133,34 +127,4 @@ function jdt(p){
 	var ed = document.getElementById("ed");
 	var width = p * 1.4;
 	ed.style.width = width;
-}
-
-function canvas_close(){
-	var canvas=document.getElementById('close');
-	var close=canvas.getContext('2d');
-	close.moveTo(2,2);
-	close.lineTo(8,8);
-	close.moveTo(2,8);
-	close.lineTo(8,2);
-	close.strokeStyle='#FFF';  
-	close.lineWidth=2;      
-	close.stroke();
-	close.restore();
-}
-function canvas_minimode(){
-	var canvas=document.getElementById("minimode");
-	var minimode=canvas.getContext("2d");
-	minimode.lineWidth=1;
-	minimode.strokeStyle ='#FFF';
-	minimode.strokeRect(2,3,6,5);
-}
-function canvas_minimize(){
-	var canvas=document.getElementById('minimize');
-	var minimize=canvas.getContext('2d');
-	minimize.moveTo(1,8);
-	minimize.lineTo(8,8);
-	minimize.strokeStyle='#FFF';  
-	minimize.lineWidth=1;      
-	minimize.stroke();
-	minimize.restore();
 }

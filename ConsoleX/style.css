@@ -1,0 +1,15 @@
+/*
+
++Author:B1ackRainFlake
++CreateDate:2013-12-01
+
+*/
+@font-face{font-family: 'lato';src:url('fonts/lato.woff');}
+@font-face{font-family: 'latoBold';src:url('fonts/latoBold.woff');}
+@font-face{font-family: 'latoThin';src:url('fonts/latoThin.woff');}
+
+*{margin:0;padding: 0;font-family: 'latoThin','Open Sans',Microsoft YaHei,Arial;}
+html{font-size: 62.5%;}
+header{position: fixed;width:100%;}
+.transparent{background: rgba();}
+#wrap{width:960px;margin:0 auto;font-size: 1.3rem;}
